@@ -62,7 +62,7 @@ const Contactme = () => {
           viewport={{ once: true }}
           className="min-h-screen pt-20 bg-gradient-to-b from-obscure to-dark hero">
           {/* CARD HERO */}
-          <div className="pb-20 flex-col hero-content lg:flex-row-reverse">
+          <div className="flex-col pb-20 hero-content lg:flex-row-reverse">
 
             {/* TEXTO */}
             <motion.div
