@@ -25,7 +25,7 @@ const Navbar_responsive = () => {
         animate={isOpen ? "open" : "closed"}
         className="fixed z-10 w-full md:hidden ">
         <div className="navbar">
-          <div className="grid w-11/12 grid-cols-2  navbar-start gap-x-20 justify-cente">
+          <div className="grid w-11/12 grid-cols-2 navbar-start gap-x-20 justify-cente">
 
 
             <motion.div
@@ -114,7 +114,12 @@ const Navbar_responsive = () => {
               }}
 
               className="justify-self-end"><Link href="/">
-                <a><img className="w-8 h-12S" src={logo} alt="Logo Ramiro Gumma frontend developer" /></a>
+                <a><Image 
+                width={32}
+                height={48}
+                className="w-8 h-12" 
+                src={logo} 
+                alt="Logo Ramiro Gumma frontend developer" /></a>
               </Link>
             </motion.div>
           </div>
@@ -125,7 +130,7 @@ const Navbar_responsive = () => {
 
       {/* Nav Desktop */}
 
-      <div className='fixed top-0 left-0 z-10 w-full pr-5 text-sm font-bold text-white  franklin right-20 md-m:hidden'>
+      <div className='fixed top-0 left-0 z-10 w-full pr-5 text-sm font-bold text-white franklin right-20 md-m:hidden'>
         <motion.div
           initial={{
 

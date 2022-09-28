@@ -85,7 +85,7 @@ const Contactme = () => {
 
 
             {/* FORM */}
-            <form onSubmit={(ev) => Userdata(ev)} className="flex-shrink-0 w-full max-w-sm shadow-2xl lg:max-w-4xl lg:bg-obscure card sm:bg-gradient-to-b from-dark to-obscure">
+            <form onSubmit={(ev) => Userdata(ev)} className="flex-shrink-0 w-full max-w-sm shadow-2xl lg:max-w-2xl lg:bg-obscure card sm:bg-gradient-to-b from-dark to-obscure">
               <div className=" card-body">
                 <div className="form-control">
                   <label htmlFor="name" className="label">

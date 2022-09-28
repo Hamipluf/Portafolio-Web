@@ -13,6 +13,7 @@ function Aboutme() {
                 <title>
                     Portafolio Web - About Me
                 </title>
+
             </Head>
             < Navbar_responsive />
             <section className="bg-gradient-to-b from-obscure to-dark">
@@ -35,15 +36,16 @@ function Aboutme() {
                                 layout="responsive"
                                 priority
                                 src={foto1}
+                                alt="Foto De Frente Ramiro Gumma"
                             />
                         </div>
 
 
                         <div className="col-span-3 p-5 pt-10 text-sm font-normal tracking-wide text-justify text-white lg:col-span-2 lg:mb-10 lg:w-full lg:pt-20 franklin lg:text-lg ">
-                            <div className="">
-                                <p> <span className="text-infor"> ¡Hello! My name is Ramiro Gumma and I'm a Frontend Developer.</span><br />
-                                    I live in Buenos Aires, Argentina and I'm a freelancer.
-                                    I'm certified on Workana and Linkedin and my current activity is mainly focused on HTML, CSS and Javascript; I also use React, Tailwind and Bootstrap technologies. I adapt to agile management methodologies that provide a quick and effective solution to your company's problems. <br />
+                            <div>
+                                <p> <span className="text-infor"> ¡Hello! My name is Ramiro Gumma and {`I'm`} Frontend Developer.</span><br />
+                                    I live in Buenos Aires, Argentina and {`I'm`}  a freelancer.
+                                    {`I'm`}  certified on Workana and Linkedin and my current activity is mainly focused on HTML, CSS and Javascript; I also use React, Tailwind and Bootstrap technologies. I adapt to agile management methodologies that provide a quick and effective solution to your {`company's`} problems. <br />
                                     <br />
                                     I have discovered my passion for this digital world, essential to advance in a super competitive market; and that is why I am in continuous training, developing my potential permanently.
                                 </p>

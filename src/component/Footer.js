@@ -18,7 +18,8 @@ const Footer = () => {
                         src={logo}
                         width={40}
                         height={60}
-                        className="w-16 h-20" />
+                        className="w-16 h-20"
+                        alt="Logo Ramiro Gumma Frontend Developer" />
                     <p>Copyright © 2022 - All right reserved by Ramiro Gumma <span className='text-primary'>|</span>Designed by Josefina Ritter</p>
                 </div>
                 <div>

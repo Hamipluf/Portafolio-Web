@@ -23,11 +23,11 @@ function Carousel() {
       className=""
     >
 
-      <div className="carousel w-full background-home franklin pb-20 ">
+      <div className="w-full pb-20 carousel background-home franklin ">
 
-        <div id="slide1" className="py-10 p-5 carousel-item relative w-11/12 ">
+        <div id="slide1" className="relative w-11/12 p-5 py-10 carousel-item ">
 
-          <div className="card image-full m-auto lg:card-side bg-gradient-to-b from-dark to-obscure shadow-xl">
+          <div className="m-auto shadow-xl card image-full lg:card-side bg-gradient-to-b from-dark to-obscure">
             <figure><Image
               width={350}
               height={205}
@@ -36,21 +36,21 @@ function Carousel() {
               alt="Arc.dev" />
             </figure>
             <div className="card-body">
-              <h2 className="card-title title text-white">ARC</h2>
+              <h2 className="text-white card-title title">ARC</h2>
               <p>Click en el boton para contactarme.</p>
-              <div className="card-actions justify-end">
+              <div className="justify-end card-actions">
                 <motion.button layout className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://arc.dev/@ramirogumma?preview=1">Vamos</a></motion.button>
               </div>
             </div>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-40 right-40 top-1/2">
-            <a href="#slide4" className="btn btn-circle">❮</a>
-            <a href="#slide2" className="btn btn-circle">❯</a>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-1 -right-4 lg:left-40 lg:right-40 top-1/2">
+            <a href="#slide4" className="lg:btn btn-sm btn-circle">❮</a>
+            <a href="#slide2" className="lg:btn btn-sm btn-circle">❯</a>
           </div>
         </div>
 
-        <div id="slide2" className="py-10 p-5 carousel-item relative w-11/12 ">
-          <div className="card m-auto image-full lg:card-side bg-gradient-to-b from-dark to-obscure shadow-xl">
+        <div id="slide2" className="relative w-11/12 p-5 py-10 carousel-item ">
+          <div className="m-auto shadow-xl card image-full lg:card-side bg-gradient-to-b from-dark to-obscure">
             <figure><Image
               width={350}
               height={205}
@@ -59,21 +59,21 @@ function Carousel() {
               alt="web wo
    rkana"/></figure>
             <div className="card-body">
-              <h2 className="card-title title text-white">WORKANA</h2>
+              <h2 className="text-white card-title title">WORKANA</h2>
               <p>Click en el boton para contactarme.</p>
-              <div className="card-actions justify-end">
+              <div className="justify-end card-actions">
                 <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://www.workana.com/freelancer/b85e703950de6afa717ace9a8327c73a">Vamos</a></button>
               </div>
             </div>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-40 right-40 top-1/2">
-            <a href="#slide1" className="btn btn-circle">❮</a>
-            <a href="#slide3" className="btn btn-circle">❯</a>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-1 -right-4 lg:left-40 lg:right-40 top-1/2">
+            <a href="#slide1" className="lg:btn btn-sm btn-circle">❮</a>
+            <a href="#slide3" className="lg:btn btn-sm btn-circle">❯</a>
           </div>
         </div>
 
-        <div id="slide3" className="py-10 p-5 carousel-item relative w-11/12 ">
-          <div className="card m-auto image-full lg:card-side bg-gradient-to-b from-dark to-obscure shadow-xl">
+        <div id="slide3" className="relative w-11/12 p-5 py-10 carousel-item ">
+          <div className="m-auto shadow-xl card image-full lg:card-side bg-gradient-to-b from-dark to-obscure">
             <figure><Image
               width={350}
               height={205}
@@ -82,20 +82,20 @@ function Carousel() {
               alt="Album"
             /></figure>
             <div className="card-body">
-              <h2 className="card-title title text-white">GITHUB</h2>
+              <h2 className="text-white card-title title">GITHUB</h2>
               <p>Click en el boton para contactarme.</p>
-              <div className="card-actions justify-end">
+              <div className="justify-end card-actions">
                 <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://github.com/Hamipluf">Vamos</a></button>
               </div>
             </div>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-40 right-40 top-1/2">
-            <a href="#slide2" className="btn btn-circle">❮</a>
-            <a href="#slide4" className="btn btn-circle">❯</a>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-1 -right-4 lg:left-40 lg:right-40 top-1/2">
+            <a href="#slide2" className="lg:btn btn-sm btn-circle">❮</a>
+            <a href="#slide4" className="lg:btn btn-sm btn-circle">❯</a>
           </div>
         </div>
-        <div id="slide4" className="py-10 p-5 carousel-item relative w-11/12  ">
-          <div className="card m-auto image-full lg:card-side bg-gradient-to-b from-dark to-obscure shadow-xl">
+        <div id="slide4" className="relative w-11/12 p-5 py-10 carousel-item ">
+          <div className="m-auto shadow-xl card image-full lg:card-side bg-gradient-to-b from-dark to-obscure">
             <figure><Image
               width={350}
               height={205}
@@ -104,16 +104,16 @@ function Carousel() {
               alt="Album
    "/></figure>
             <div className="card-body">
-              <h2 className="card-title title text-white">LINKEDIN</h2>
+              <h2 className="text-white card-title title">LINKEDIN</h2>
               <p>Click en el boton para contactarme.</p>
-              <div className="card-actions justify-end">
+              <div className="justify-end card-actions">
                 <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://www.linkedin.com/in/ramiro-gabriel-gumma-400993240/">Vamos</a></button>
               </div>
             </div>
           </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-40 right-40 top-1/2">
-            <a href="#slide3" className="btn btn-circle">❮</a>
-            <a href="#slide1" className="btn btn-circle">❯</a>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-1 -right-4 lg:left-40 lg:right-40 top-1/2">
+            <a href="#slide3" className="lg:btn btn-sm btn-circle">❮</a>
+            <a href="#slide1" className="lg:btn btn-sm btn-circle">❯</a>
           </div>
         </div>
       </div>

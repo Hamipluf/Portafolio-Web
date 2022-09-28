@@ -53,9 +53,9 @@ function Index() {
                         </h2>
 
                         <h2 className='pb-20 text-3xl font-bold lg:text-6xl franklin'>
-                            I'm <span className='text-infor'>Front-End Developer</span></h2>
+                        {`I'm `} <span className='text-infor'>Front-End Developer</span></h2>
 
-                        <h2 className='pb-72 lg:text-xl text-md inconsolota'>I'm  <span className='text-infor'>Ramiro Gumma</span> - Based in Buenos Aires</h2>
+                        <h2 className='pb-72 lg:text-xl text-md inconsolota'>{`I'am `}<span className='text-infor'>Ramiro Gumma</span> - Based in Buenos Aires</h2>
                     </div>
                 </motion.div>
             </section>

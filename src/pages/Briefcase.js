@@ -43,7 +43,7 @@ function Briefcase() {
                         {/*SLILLS*/}
                         <div>
                             <div className="pt-32 pl-10">
-                                <h2 className='text-4xl font-extrabold lg:text-5xl franklin text-infor'> <span className='text-2xl text text-ligth'>//</span> Skills</h2>
+                                <h2 className='text-4xl font-extrabold lg:text-5xl franklin text-infor'> <span className='text-2xl text text-ligth'>{`//`}</span> Skills</h2>
                             </div>
 
                             <div className='w-11/12 pt-16 m-auto text-justify'>
@@ -88,7 +88,7 @@ function Briefcase() {
                         {/*TOOLS*/}
                         <div>
                             <div className="pl-10 font-extrabold lg:pt-32 pt-44">
-                                <h2 className='text-4xl lg:text-5xl franklin text-infor'> <span className='text-2xl text text-ligth'>//</span> Tools</h2>
+                                <h2 className='text-4xl lg:text-5xl franklin text-infor'><span className='text-2xl text text-ligth'>{`//`}</span>Tools</h2>
                             </div>
 
                             <div className='w-11/12 pt-16 m-auto text-justify'>
