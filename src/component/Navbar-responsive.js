@@ -25,7 +25,7 @@ const Navbar_responsive = () => {
         animate={isOpen ? "open" : "closed"}
         className="fixed z-10 w-full md:hidden ">
         <div className="navbar">
-          <div className="grid w-11/12 grid-cols-2 navbar-start gap-x-20 justify-cente">
+          <div className="grid w-full grid-cols-2 navbar-start gap-x-16 justify-cente">
 
 
             <motion.div
@@ -35,7 +35,7 @@ const Navbar_responsive = () => {
               }}
               transition={{ duration: 0.2 }}
               style={{ originY: 0.55 }}
-              className=" dropdown justify-self-start">
+              className="dropdown justify-self-start">
 
               <motion.label
                 whileTap={{ scale: 0.97 }}
@@ -68,26 +68,30 @@ const Navbar_responsive = () => {
                   }
                 }}
                 style={{ pointerEvents: isOpen ? "auto" : "none" }}
-                tabIndex={0} className="mt-3 text-white bg-black rounded-md shadow menu menu-compact dropdown-content">
+                tabIndex={0}
+                className="mt-3 text-white bg-black rounded-md shadow menu menu-compact dropdown-content">
+
                 <motion.li variants={itemVariants} className="p-3 text-xs" >
-                  <Link className="pr-60" href="/">
-                    <a>Home</a>
-                  </Link>
-                </motion.li>
-                <motion.li variants={itemVariants} className="p-3 text-xs" >
-                  <Link className="pr-60" href="/Aboutme">
-                    <a>About Me</a>
-                  </Link>
-                </motion.li>
-                <motion.li variants={itemVariants} className="p-3 text-xs" >
-                  <Link className="pr-60" href="/contactme">
-                    <a>Contact Me</a>
+                  <Link href="/">
+                    <a className="pr-60" >Home</a>
                   </Link>
                 </motion.li>
 
                 <motion.li variants={itemVariants} className="p-3 text-xs" >
-                  <Link className="pr-60" href="/briefcase">
-                    <a>Briefcase</a>
+                  <Link href="/Aboutme">
+                    <a className="pr-60" >About Me</a>
+                  </Link>
+                </motion.li>
+
+                <motion.li variants={itemVariants} className="p-3 text-xs" >
+                  <Link href="/contactme">
+                    <a className="pr-60" >Contact Me</a>
+                  </Link>
+                </motion.li>
+
+                <motion.li variants={itemVariants} className="p-3 text-xs" >
+                  <Link href="/briefcase">
+                    <a className="pr-60" >Briefcase</a>
                   </Link>
                 </motion.li>
               </motion.ul>
@@ -114,12 +118,12 @@ const Navbar_responsive = () => {
               }}
 
               className="justify-self-end"><Link href="/">
-                <a><Image 
-                width={32}
-                height={48}
-                className="w-8 h-12" 
-                src={logo} 
-                alt="Logo Ramiro Gumma frontend developer" /></a>
+                <a><Image
+                  width={32}
+                  height={48}
+                  className="w-8 h-12"
+                  src={logo}
+                  alt="Logo Ramiro Gumma frontend developer" /></a>
               </Link>
             </motion.div>
           </div>
@@ -175,15 +179,15 @@ const Navbar_responsive = () => {
             <a>Home</a>
           </Link>
           </motion.li>
-          <motion.li className=" links" ><Link href="/Aboutme">
+          <motion.li className=" links" ><Link href="/aboutme">
             <a>About Me</a>
           </Link>
           </motion.li>
-          <motion.li className=" links" ><Link href="/Contactme">
+          <motion.li className=" links" ><Link href="/contactme">
             <a>Contact Me</a>
           </Link>
           </motion.li>
-          <motion.li className=" links" ><Link href="/Briefcase">
+          <motion.li className=" links" ><Link href="/briefcase">
             <a>Briefcase</a>
           </Link>
           </motion.li>
