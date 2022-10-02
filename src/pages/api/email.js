@@ -11,7 +11,7 @@ export default async function email(req, res) {
         body: JSON.stringify({
             to: [{ email: body.mail }],
             replyTo: { email: 'ramirogumma@hotmail.com' },
-            templateId: 1,
+            templateId: 2,
             params: { NAME: body.name, ASUNTO: body.asunto, MESSAGE: body.message },
         }),
     };

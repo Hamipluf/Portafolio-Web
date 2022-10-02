@@ -12,15 +12,14 @@ const Footer = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className="w-full p-10 pt-20 footer text-base-content bg-gradient-to-b from-obscure to-primary ">
-                <div>
+                className="w-full p-10 pt-10 footer text-base-content bg-gradient-to-b from-obscure to-primary ">
+                <div className="self-end sm:order-3">
                     <Image
                         src={logo}
                         width={40}
-                        height={60}
-                        className="w-16 h-20"
+                        height={50}
                         alt="Logo Ramiro Gumma Frontend Developer" />
-                    <p>Copyright © 2022 - All right reserved by Ramiro Gumma <span className='text-primary'>|</span>Designed by Josefina Ritter</p>
+                    <p className="text-xs opacity-40">Copyright © 2022 - All right reserved by Ramiro Gumma <span className='text-primary'>|</span>Designed by Josefina Ritter</p>
                 </div>
                 <div>
                     <span className="footer-title">Company</span>

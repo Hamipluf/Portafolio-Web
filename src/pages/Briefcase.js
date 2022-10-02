@@ -7,6 +7,9 @@ import git from './img/git.png'
 import tailwind from './img/Tailwind.png'
 import npm from './img/npm.png'
 import framer from './img/framer.png'
+import next from './img/next.png'
+import bootstrap from './img/bootstrap.png'
+import vercel from './img/vercel.png'
 import portafolio from './img/portafolio.png'
 import devops from './img/DevOps News 1.png'
 import appproduct from './img/appproduct.png'
@@ -28,7 +31,7 @@ function Briefcase() {
                 </title>
             </Head>
             <Navbar_responsive />
-            <section className='bg-gradient-to-b from-dark to-obscure'>
+            <section className='bg-gradient-to-b w-full from-obscure to-dark'>
                 <motion.div
                     initial={{
                         y: -100,
@@ -39,65 +42,107 @@ function Briefcase() {
                         opacity: 1,
                         y: 0
                     }}
-                    viewport={{ once: true }}>
+                    viewport={{ once: true }}
+                    className="pb-20">
 
 
-                    <section className="lg:grid lg:gap-5 lg:grid-cols-2 lg:w-full">
+                    <section className="lg:grid lg:justify-items-center lg:p-20 lg:pb-10 lg:gap-5 lg:grid-cols-3 lg:w-full">
                         {/*SLILLS*/}
-                        <div>
-                            <div className="pt-32 pl-10">
-                                <h2 className='text-4xl font-extrabold lg:text-5xl franklin text-infor'> <span className='text-2xl text text-ligth'>{`//`}</span> Skills</h2>
+                        <motion.div
+                            initial={{
+                                x: -200,
+                                opacity: 0
+                            }}
+                            transition={{
+                                delay: 1,
+                                default: {
+                                    duration: 0.8,
+                                    ease: 'easeInOut'
+
+                                },
+                            }}
+
+                            whileInView={{
+                                opacity: 1,
+                                x: 0
+                            }}
+                            viewport={{ once: true }}
+                            className="sm-m:w-full"
+                        >
+                            <div className="pt-32 text-center">
+                                <h2 className='text-4xl font-extrabold lg:text-5xl franklin text-infor'> <span className='text-2xl text lg:hidden text-ligth'>{`//`}</span> Skills</h2>
                             </div>
 
-                            <div className='w-11/12 pt-16 m-auto text-justify'>
-                                <p className='text-xs font-medium leading-relaxed text-white lg:text-xl franklin'>Lenguajes de front-end con los que trabajo.</p>
+                            <div className='w-11/12 pt-16 m-auto text-center'>
+                                <p className='text-md font-thin leading-relaxed text-white lg:text-lg franklin'>Development languages I work with.</p>
                             </div>
 
                             <div className="grid grid-cols-2 gap-5 pt-10 gap-y-10 justify-items-center">
                                 <div className="duration-75 active:scale-125 lg:hover:scale-125">
                                     <Image
-                                        width={90}
-                                        height={90}
+                                        width={65}
+                                        height={70}
                                         priority
                                         src={css}
                                         alt="logo diseñado por josefina ritter de css" />
                                 </div>
                                 <div className="duration-75 active:scale-125 lg:hover:scale-125">
                                     <Image
-                                        width={90}
-                                        height={90}
+                                        width={65}
+                                        height={70}
                                         priority
                                         src={js}
                                         alt="logo diseñado por josefina ritter de javascript" />
                                 </div>
                                 <div className="duration-75 active:scale-125 lg:hover:scale-125">
                                     <Image
-                                        width={90}
-                                        height={90}
+                                        width={65}
+                                        height={70}
                                         priority
                                         src={html}
                                         alt="logo diseñado por josefina ritter de html" />
                                 </div>
 
                             </div>
-                        </div>
+                        </motion.div>
+
+                        <div className='mt-32 sm-m:hidden'> <span className='text-4xl font-medium text-dark'>{`//`}</span></div>
 
                         {/*TOOLS*/}
-                        <div>
-                            <div className="pl-10 font-extrabold lg:pt-32 pt-44">
-                                <h2 className='text-4xl lg:text-5xl franklin text-infor'><span className='text-2xl text text-ligth'>{`//`}</span>Tools</h2>
+                        <motion.div
+                            initial={{
+                                x: 200,
+                                opacity: 0
+                            }}
+                            transition={{
+                                delay: 1,
+                                default: {
+                                    duration: 0.8,
+                                    ease: 'easeInOut'
+
+                                },
+                            }}
+
+                            whileInView={{
+                                opacity: 1,
+                                x: 0
+                            }}
+                            viewport={{ once: true }}
+                            className="sm-m:w-full">
+                            <div className="lg:pt-32 pt-44">
+                                <h2 className='text-4xl text-center inconsolata font-extrabold lg:text-5xl text-infor'><span className='text-2xl text lg:hidden text-ligth'>{`//`}</span> Tools</h2>
                             </div>
 
-                            <div className='w-11/12 pt-16 m-auto text-justify'>
-                                <div><p className='text-xs font-medium text-white lg:text-xl franklin'>Tecnologias de desarrollo </p></div>
+                            <div className='pt-16 m-auto text-center'>
+                                <div><p className='font-thin text-white text-md franklin'>Tecnologias de desarrollo. </p></div>
                             </div>
 
-                            <div className="grid grid-cols-3 gap-5 p-5 pt-10 lg:pb-20 justify-items-center">
+                            <div className="grid grid-cols-3 gap-10 p-5 pt-10 lg:pb-20 justify-items-center">
                                 <div
                                     className="duration-75 active:scale-125 lg:hover:scale-125">
                                     <Image
-                                        width={90}
-                                        height={90}
+                                        width={120}
+                                        height={120}
                                         priority
                                         src={github}
                                         alt="logo diseñado por josefina ritter de github" />
@@ -105,8 +150,8 @@ function Briefcase() {
                                 <div
                                     className="duration-75 active:scale-125 lg:hover:scale-125">
                                     <Image
-                                        width={90}
-                                        height={90}
+                                        width={101}
+                                        height={101}
                                         priority
                                         src={git}
                                         alt="logo diseñado por josefina ritter de git" />
@@ -114,8 +159,8 @@ function Briefcase() {
                                 <div
                                     className="duration-75 active:scale-125 lg:hover:scale-125">
                                     <Image
-                                        width={90}
-                                        height={90}
+                                        width={103}
+                                        height={103}
                                         priority
                                         src={tailwind}
                                         alt="logo diseñado por josefina ritter de tailwind" />
@@ -123,16 +168,16 @@ function Briefcase() {
                                 <div
                                     className="duration-75 mt-7 active:scale-125 lg:hover:scale-125">
                                     <Image
-                                        width={90}
-                                        height={50}
+                                        width={126}
+                                        height={49}
                                         priority
                                         src={npm}
                                         alt="logo diseñado por josefina ritter de npm" />
                                 </div>
                                 <div className="duration-75 active:scale-125 lg:hover:scale-125">
                                     <Image
-                                        width={90}
-                                        height={90}
+                                        width={107}
+                                        height={97.74}
                                         priority
                                         src={react}
                                         alt="logo diseñado por josefina ritter de react" />
@@ -145,25 +190,56 @@ function Briefcase() {
                                         src={framer}
                                         alt="logo diseñado por josefina ritter de framer" />
                                 </div>
+                                <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <Image
+                                        width={101}
+                                        height={81}
+                                        priority
+                                        src={bootstrap}
+                                        alt="logo diseñado por josefina ritter de bootstrap" />
+                                </div>
+                                <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <Image
+                                        width={91}
+                                        height={71}
+                                        priority
+                                        src={vercel}
+                                        alt="logo diseñado por josefina ritter de vercel" />
+                                </div>
+                                <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <Image
+                                        width={88}
+                                        height={88}
+                                        priority
+                                        src={next}
+                                        alt="logo diseñado por josefina ritter de next" />
+                                </div>
                             </div>
 
-                        </div>
+                        </motion.div>
                     </section>
                 </motion.div>
             </section>
             {/* PROYECTOS */}
-            <section className='bg-obscure franklin'>
-                <motion.div
-                    initial={{ x: -200, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 1, duration: .5, }}
-                    viewport={{ once: true }}>
-                    <h2 className="pt-10 pl-10 text-xl text-white lg:text-3xl franklin">PROYECTOS <span className="text-xl text-infor">:</span></h2>
-                </motion.div>
-                <div className='grid w-full grid-cols-2 gap-2 p-2 pt-20 lg:gap-5 bg-obscure justify-araund justify-items-center'>
-                    <div className='border-2 border-solid over border-infor '>
+            <section className='bg-dark font-black franklin'>
+                <div>
+                    <h2 className="lg:pl-16 text-3xl sm-m:text-center lg:text-5xl text-white franklin">Check out<span className="text-infor"> my proyects</span></h2>
+                </div>
+                <motion.div 
+                initial={{
+                    x: -100,
+                    opacity: 0
+                }}
+                transition={{ duration: 1.2 }}
+                whileInView={{
+                    opacity: 1,
+                    x: 0
+                }}
+                viewport={{ once: true }}
+                className=' bg-gradient-to-b from-dark to-obscure grid w-full grid-cols-2 gap-2 p-2 pt-20 lg:gap-5 pb-16 justify-items-center'>
+                    <div className='border-2 border-infor'>
                         {/* OPEN MODAL */}
-                        <label htmlFor="my-modal" className="btn modal-button">
+                        <label htmlFor="my-modal" className=" cursor-pointer modal-button">
                             <Image
                                 width={370}
                                 height={200}
@@ -223,7 +299,7 @@ function Briefcase() {
                     {/* MODAL-2 */}
                     <div className='border-2 border-solid border-infor '>
                         {/* OPEN MODAL-2 */}
-                        <label htmlFor="my-modal-2" className="btn modal-button">
+                        <label htmlFor="my-modal-2" className=" cursor-pointer modal-button">
                             <Image
                                 width={370}
                                 height={200}
@@ -282,11 +358,12 @@ function Briefcase() {
                     {/* MODAL-3 */}
                     <div className='col-span-2 border-2 border-solid border-infor '>
                         {/* OPEN MODAL-3 */}
-                        <label htmlFor="my-modal-3" className="btn modal-button">
+                        <label htmlFor="my-modal-3" className="cursor-pointer modal-button">
                             <Image
                                 width={370}
                                 height={200}
                                 src={portafolio}
+                                className="btn"
                             />
                         </label>
                         {/* BODY MODAL-3 */}
@@ -349,12 +426,12 @@ function Briefcase() {
                                     />
                                 </div>
                                 <div className="modal-action">
-                                    <label htmlFor="my-modal" className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor">GO!</label>
+                                    <label htmlFor="my-modal" className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a href='https://portafolio-nextjs-hamipluf.vercel.app/'>GO!</a></label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </section>
 
             {/* FOOTER */}

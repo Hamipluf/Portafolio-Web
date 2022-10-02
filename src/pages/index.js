@@ -27,7 +27,9 @@ function Index() {
 
     return (
         <>
-            <Navbar_responsive />
+     <div className=''>
+            <Navbar_responsive />  
+             
             <section className='z-0 background-home'>
                 <motion.div
                     initial={{
@@ -41,7 +43,7 @@ function Index() {
                         y: 0
                     }}
                     viewport={{ once: true }}>
-                    <div className='ml-10 text-white lg:ml-20 pt-60 lg:pt-72'>
+                    <div className='ml-10  text-white lg:ml-20 pt-60 lg:pt-72'>
                         <h2 className='text-4xl italic font-bold lg:text-6xl z-1 franklin'>
                             <span>{text}</span>
                             <Cursor cursorColor='#57F27E' cursorStyle='/>' />
@@ -60,13 +62,12 @@ function Index() {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: 1, duration: .5, }}
                     viewport={{ once: true }}
-                    className="pl-20 text-xl text-white lg:text-3xl franklin">Encontrame en <span className="text-4xl text-infor">:</span>
-                </motion.h2>
+                    className="pl-20 text-white font-black text-3xl franklin"><span className='text-infor'>Find</span> me</motion.h2>
 
                 <Carousel />
             </section>
             <Footer />
-
+</div>
         </>
     )
 }

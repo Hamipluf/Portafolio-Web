@@ -40,8 +40,10 @@ const Navbar_responsive = () => {
               <motion.label
                 whileTap={{ scale: 0.97 }}
                 onClick={() => setIsOpen(!isOpen)}
-                tabIndex={0} className="border btn bg-dark md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white hover:text-obscure" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                tabIndex={0} className="border btn btn-circle bg-dark focus:bg-infor md:hidden">
+                {/* <!-- hamburger icon --> */}
+                <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
+
               </motion.label>
 
 
@@ -78,7 +80,7 @@ const Navbar_responsive = () => {
                 </motion.li>
 
                 <motion.li variants={itemVariants} className="p-3 text-xs" >
-                  <Link href="/Aboutme">
+                  <Link href="/aboutme">
                     <a className="pr-60" >About Me</a>
                   </Link>
                 </motion.li>
@@ -134,7 +136,7 @@ const Navbar_responsive = () => {
 
       {/* Nav Desktop */}
 
-      <div className='fixed top-0 left-0 z-10 w-full pr-5 text-sm font-bold text-white franklin right-20 md-m:hidden'>
+      <div className='fixed top-0 left-0 z-10 w-full pr-5 font-bold text-white franklin right-20 md-m:hidden'>
         <motion.div
           initial={{
 
@@ -151,8 +153,8 @@ const Navbar_responsive = () => {
           className="w-10 h-8 pt-3 lg:ml-10 lg:">
           <Link href="/">
             <a> <Image
-              width={40}
-              height={60}
+              width={30}
+              height={40}
               src={logo}
               alt="Logo Ramiro Gumma frontend developer" /> </a>
           </Link>
@@ -175,20 +177,20 @@ const Navbar_responsive = () => {
           }}
 
           className="flex flex-row justify-end gap-20">
-          <motion.li className=" links" ><Link href="/">
-            <a>Home</a>
+          <motion.li className="links" ><Link href="/">
+            <a className='text-xs'>Home</a>
           </Link>
           </motion.li>
-          <motion.li className=" links" ><Link href="/aboutme">
-            <a>About Me</a>
+          <motion.li className="links" ><Link href="/aboutme">
+            <a className='text-xs'>About Me</a>
           </Link>
           </motion.li>
-          <motion.li className=" links" ><Link href="/contactme">
-            <a>Contact Me</a>
+          <motion.li className="links" ><Link href="/contactme">
+            <a className='text-xs'>Contact Me</a>
           </Link>
           </motion.li>
-          <motion.li className=" links" ><Link href="/briefcase">
-            <a>Briefcase</a>
+          <motion.li className="links" ><Link href="/briefcase">
+            <a className='text-xs'>Briefcase</a>
           </Link>
           </motion.li>
         </motion.ul>

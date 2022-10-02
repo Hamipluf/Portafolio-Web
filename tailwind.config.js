@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm-m': '425px',
+        'sm': '425px',
         // => @media (max-width: 425px) { ... }
-  
+
+        'sm-m': {'max': '425px'},
+        // => @media (max-width: 425px) { ... }
+
         'md': '765px',
         // => @media (min-width: 770px) { ... }
 
@@ -27,7 +30,10 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require('daisyui'),
+    require('tailwind-scrollbar')({ nocompatible: true })
+  ],
 
   daisyui: {
     styled: true,

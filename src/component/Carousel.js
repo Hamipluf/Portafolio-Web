@@ -57,7 +57,7 @@ function Carousel() {
             <div className="z-0 m-auto shadow-xl card image-full lg:card-side bg-gradient-to-b from-dark to-obscure">
               <figure><Image
                 width={390}
-                height={230}
+                height={225}
                 src={workana}
                 alt="web workana" /></figure>
               <div className="card-body">
