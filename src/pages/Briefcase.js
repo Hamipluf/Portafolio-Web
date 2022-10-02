@@ -21,7 +21,7 @@ import Image from "next/image"
 
 
 
-function Briefcase() {
+function briefcase() {
 
     return (
         <>
@@ -134,7 +134,7 @@ function Briefcase() {
                             </div>
 
                             <div className='pt-16 m-auto text-center'>
-                                <div><p className='font-thin text-white text-md franklin'>Tecnologias de desarrollo. </p></div>
+                                <div><p className='font-thin text-white text-md franklin'>Development tools. </p></div>
                             </div>
 
                             <div className="grid grid-cols-3 gap-10 p-5 pt-10 lg:pb-20 justify-items-center">
@@ -441,4 +441,4 @@ function Briefcase() {
     )
 }
 
-export default Briefcase;
+export default briefcase;

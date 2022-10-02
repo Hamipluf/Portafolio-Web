@@ -6,7 +6,7 @@ import { motion,  useViewportScroll, useTransform } from "framer-motion"
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import Carousel from '../component/Carousel';
 
-function Index() {
+function index() {
     const { scrollYProgress } = useViewportScroll()
     const scale = useTransform(scrollYProgress, [1, .2], [0, 1]);
 
@@ -50,9 +50,9 @@ function Index() {
                         </h2>
 
                         <h2 className='pb-20 text-3xl font-bold lg:text-6xl franklin'>
-                        {`I'am `} <span className='text-infor'>Front-End Developer</span></h2>
+                        {`I'm a `} <span className='text-infor'>Front-End Developer</span></h2>
 
-                        <h2 className='pb-72 lg:text-xl text-md inconsolota'> {`I'am `}     <span className='text-infor'>Ramiro Gumma</span> - Based in Buenos Aires</h2>
+                        <h2 className='pb-72 lg:text-xl text-md inconsolota'> {`I'm`} <span className='text-infor'>Ramiro Gumma</span> - Based in Buenos Aires</h2>
                     </div>
                 </motion.div>
 
@@ -72,4 +72,4 @@ function Index() {
     )
 }
 
-export default Index;
+export default index;

@@ -43,7 +43,7 @@ function Carousel() {
                 <h2 className="text-white card-title title">ARC</h2>
                 <p>Click en el boton para contactarme.</p>
                 <div className="justify-end card-actions">
-                  <motion.button layout className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://arc.dev/@ramirogumma?preview=1">Vamos</a></motion.button>
+                  <motion.button layout className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://arc.dev/@ramirogumma?preview=1">{"Let's go!"}</a></motion.button>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ function Carousel() {
                 <h2 className="text-white card-title title">WORKANA</h2>
                 <p>Click en el boton para contactarme.</p>
                 <div className="justify-end card-actions">
-                  <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://www.workana.com/freelancer/b85e703950de6afa717ace9a8327c73a">Vamos</a></button>
+                  <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://www.workana.com/freelancer/b85e703950de6afa717ace9a8327c73a">{"Let's go!"}</a></button>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ function Carousel() {
                 <h2 className="text-white card-title title">GITHUB</h2>
                 <p>Click en el boton para contactarme.</p>
                 <div className="justify-end card-actions">
-                  <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://github.com/Hamipluf">Vamos</a></button>
+                  <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://github.com/Hamipluf">{"Let's go!"}</a></button>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ function Carousel() {
                 <h2 className="text-white card-title title">LINKEDIN</h2>
                 <p>Click en el boton para contactarme.</p>
                 <div className="justify-end card-actions">
-                  <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://www.linkedin.com/in/ramiro-gabriel-gumma-400993240/">Vamos</a></button>
+                  <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"><a target="BLANK" href="https://www.linkedin.com/in/ramiro-gabriel-gumma-400993240/">{"Let's go!"}</a></button>
                 </div>
               </div>
             </div>

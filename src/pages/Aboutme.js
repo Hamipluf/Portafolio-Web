@@ -6,7 +6,7 @@ import Footer from "../component/Footer"
 
 import { motion } from "framer-motion"
 
-function Aboutme() {
+function aboutme() {
     return (
         <>
             <Head>
@@ -71,4 +71,4 @@ function Aboutme() {
     )
 }
 
-export default Aboutme
+export default aboutme
