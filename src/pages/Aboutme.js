@@ -29,8 +29,25 @@ function aboutme() {
                     }}
                     viewport={{ once: true }}
                     className="py-5 ">
-                    <div className="grid w-full grid-cols-3 pt-20 lg:pt-5 justify-items-center ">
-                        <div className="col-span-2 pt-20 lg:self-end "><h2 className="text-4xl font-extrabold text-center text-white lg:text-6xl franklin">Get to <span className="text-infor">know me better</span> </h2></div>
+                    <div className="grid w-full grid-cols-3 pt-20 lg:pt-5 lg:p-10 justify-items-center ">
+                        <motion.div
+                         initial={{opacity:.4, x: -800 }}
+                         animate={{opacity: 1, x: 0 }}
+                         transition={{
+                           delay: 1,
+                           default: {
+                             duration: .8,
+                             ease: 'easeInOut',
+                             type: 'spring'
+                            
+                            }
+             
+                           
+                         }} 
+                        className="col-span-2 pt-20 lg:mr-44 lg:self-start ">
+                            <h2 className="text-4xl font-extrabold text-white sm-m:text-center lg:text-6xl franklin">Get to <span className="text-infor">know me better</span>
+                             </h2>
+                        </motion.div>
                         <div className="block w-24 m-5 lg:w-52 justify-self-center lg:pt-20 lg:row-span-2">
                             <Image
                                 layout="responsive"

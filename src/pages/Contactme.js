@@ -83,7 +83,7 @@ const contactme = () => {
 
               },
               scale: {
-                type: "just",
+                type: "spring",
               }
             }} className="text-left">
 

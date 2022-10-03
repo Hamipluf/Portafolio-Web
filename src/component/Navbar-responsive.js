@@ -42,7 +42,7 @@ const Navbar_responsive = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 tabIndex={0} className="border btn btn-circle bg-dark focus:bg-infor md:hidden">
                 {/* <!-- hamburger icon --> */}
-                <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
+                <svg className="fill-current swap-off" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
 
               </motion.label>
 
@@ -92,7 +92,7 @@ const Navbar_responsive = () => {
                 </motion.li>
 
                 <motion.li variants={itemVariants} className="p-3 text-xs" >
-                  <Link href="/briefcase">
+                  <Link href="/Briefcase">
                     <a className="pr-60" >Briefcase</a>
                   </Link>
                 </motion.li>
@@ -189,7 +189,7 @@ const Navbar_responsive = () => {
             <a className='text-xs'>Contact Me</a>
           </Link>
           </motion.li>
-          <motion.li className="links" ><Link href="/briefcase">
+          <motion.li className="links" ><Link href="/Briefcase">
             <a className='text-xs'>Briefcase</a>
           </Link>
           </motion.li>
