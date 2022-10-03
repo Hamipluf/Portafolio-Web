@@ -1,4 +1,5 @@
 import Footer from "../component/Footer"
+import react from "react"
 import { useState } from 'react'
 import axios from "axios"
 import Head from "next/head"
@@ -7,7 +8,9 @@ import { motion } from "framer-motion"
 
 
 
-const contactme = () => {
+const Contactme = () => {
+
+  
   const [status, setStatus] = useState('iddle');
 
   const Userdata = async ev => {
@@ -148,4 +151,4 @@ const contactme = () => {
     </>
   )
 }
-export default contactme
+export default Contactme

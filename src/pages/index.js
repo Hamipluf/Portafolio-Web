@@ -2,12 +2,12 @@
 import Footer from '../component/Footer';
 import Head from 'next/head';
 import Navbar_responsive from '../component/Navbar-responsive';
-import { motion,  useViewportScroll, useTransform } from "framer-motion"
+import { motion,  useScroll, useTransform } from "framer-motion"
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import Carousel from '../component/Carousel';
 
-function index() {
-    const { scrollYProgress } = useViewportScroll()
+function Index() {
+    const { scrollYProgress } = useScroll()
     const scale = useTransform(scrollYProgress, [1, .2], [0, 1]);
 
     const [text, count] = useTypewriter({
@@ -43,7 +43,7 @@ function index() {
                         y: 0
                     }}
                     viewport={{ once: true }}>
-                    <div className='ml-10  text-white lg:ml-20 pt-60 lg:pt-72'>
+                    <div className='ml-10 text-white lg:ml-20 pt-60 lg:pt-72'>
                         <h2 className='text-4xl italic font-bold lg:text-6xl z-1 franklin'>
                             <span>{text}</span>
                             <Cursor cursorColor='#57F27E' cursorStyle='/>' />
@@ -62,7 +62,7 @@ function index() {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: 1, duration: .5, }}
                     viewport={{ once: true }}
-                    className="pl-20 text-white font-black text-3xl franklin"><span className='text-infor'>Find</span> me</motion.h2>
+                    className="pl-20 text-3xl font-black text-white franklin"><span className='text-infor'>Find</span> me</motion.h2>
 
                 <Carousel />
             </section>
@@ -72,4 +72,4 @@ function index() {
     )
 }
 
-export default index;
+export default Index;

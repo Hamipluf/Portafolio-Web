@@ -243,6 +243,7 @@ function briefcase() {
                                     width={370}
                                     height={200}
                                     src={appproduct}
+                                    alt="Imagen de appProduct creada por Ramiro Gumma"
                                 />
                             </label>
                             {/* BODY MODAL */}
@@ -295,6 +296,7 @@ function briefcase() {
                                     <div className='border-2 rounded-md border-infor'>
                                         <Image
                                             src={appproduct}
+                                            alt="Imagen de appProduct creada por Ramiro Gumma"
                                            
                                         />
                                     </div>
@@ -312,6 +314,7 @@ function briefcase() {
                                     width={370}
                                     height={200}
                                     src={devops}
+                                    alt="Imagen de pagina de noticias de desarrollo DevOps News creado por Ramiro Gumma"
                                 />
                             </label>
                             {/* BODY MODAL-2 */}
@@ -348,7 +351,8 @@ function briefcase() {
                                                 height={50}
                                                 priority
                                                 src={js}
-                                                alt="logo diseñado por josefina ritter de javascript" />
+                                                alt="logo diseñado por josefina ritter de javascript" 
+                                                />
                                         </div>
                                     </div>
                                     <div className='border-2 rounded-md border-infor'>
@@ -371,6 +375,7 @@ function briefcase() {
                                     width={370}
                                     height={200}
                                     src={portafolio}
+                                    alt="Imagen de portafolio web creado Por Ramiro Gumma"
                                     className="btn"
                                 />
                             </label>
@@ -424,7 +429,8 @@ function briefcase() {
                                                 height={50}
                                                 priority
                                                 src={tailwind}
-                                                alt="logo diseñado por josefina ritter de tailwind" />
+                                                alt="logo diseñado por josefina ritter de tailwind"
+                                                 />
                                         </div>
                                         <div>
                                             <Image
@@ -432,7 +438,8 @@ function briefcase() {
                                                 height={50}
                                                 priority
                                                 src={next}
-                                                alt="logo diseñado por josefina ritter de tailwind" />
+                                                alt="logo diseñado por josefina ritter de next"
+                                                 />
                                         </div>
                                         <div>
                                             <Image
@@ -440,7 +447,8 @@ function briefcase() {
                                                 height={50}
                                                 priority
                                                 src={vercel}
-                                                alt="logo diseñado por josefina ritter de tailwind" />
+                                                alt="logo diseñado por josefina ritter de verecel"
+                                                 />
                                         </div>
                                     </div>
                                     <div className='border-2 rounded-md border-infor'>
