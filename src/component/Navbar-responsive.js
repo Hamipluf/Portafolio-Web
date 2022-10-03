@@ -181,7 +181,7 @@ const Navbar_responsive = () => {
             <a className='text-xs'>Home</a>
           </Link>
           </motion.li>
-          <motion.li className="links" ><Link href="/Bboutme">
+          <motion.li className="links" ><Link href="/Aboutme">
             <a className='text-xs'>About Me</a>
           </Link>
           </motion.li>
