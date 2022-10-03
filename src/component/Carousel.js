@@ -56,8 +56,8 @@ function Carousel() {
           <div id="slide2" className="relative w-11/12 p-5 py-10 carousel-item ">
             <div className="z-0 m-auto shadow-xl card image-full lg:card-side bg-gradient-to-b from-dark to-obscure">
               <figure><Image
-                width={390}
-                height={225}
+                width={380}
+                height={220}
                 src={workana}
                 alt="web workana" /></figure>
               <div className="card-body">
