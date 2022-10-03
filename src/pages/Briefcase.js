@@ -358,6 +358,7 @@ function briefcase() {
                                     <div className='border-2 rounded-md border-infor'>
                                         <Image
                                             src={devops}
+                                            alt="Imagen de pagina de noticias de desarrollo DevOps News creado por Ramiro Gumma"
                                             
                                         />
                                     </div>
@@ -454,6 +455,7 @@ function briefcase() {
                                     <div className='border-2 rounded-md border-infor'>
                                         <Image
                                             src={portafolio}
+                                            alt="Imagen de portafolio web creado Por Ramiro Gumma"
                                           
                                         />
                                     </div>
