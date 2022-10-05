@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**"],
   theme: {
     extend: {
+      boxShadow: {
+        'xl': '-19px -22px 2px -1px rgba(87,242,126,1)',
+      },
       screens: {
         'sm': '425px',
         // => @media (max-width: 425px) { ... }
