@@ -491,7 +491,7 @@ function briefcase() {
                                 <div className="modal-box bg-gradient-to-b from-dark to-obscure ">
                                     <label htmlFor="my-modal-4" className="absolute btn btn-sm btn-circle right-2 top-2 bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor">✕</label>
                                     <h3 className="text-lg font-bold text-infor "> Weather App {`/>`}</h3>
-                                    <p className="py-4">It's a simple weather application, which is built with React.js and consumes the OpenWeather api, which is mapped with Tailwind and DaisiUi.<br />
+                                    <p className="py-4">{`It's`} a simple weather application, which is built with React.js and consumes the OpenWeather api, which is mapped with Tailwind and DaisiUi.<br />
                                         <span> Click on the button to see the site</span>
                                         <br/>
                                         Development:</p>
