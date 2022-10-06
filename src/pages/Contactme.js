@@ -108,7 +108,7 @@ const Contactme = () => {
               <div className="form-control">
                 <label htmlFor="email" className="label">
                   <span className="label-text text-ligth franklin">What is your Email?</span></label>
-                <input type="text" name="email" id="email" placeholder="example@hotmail.com" required className="max-w-sm lg:max-w-5xl lg:border lg:border-infor lg:focus:border-obscure input input-bordered focus:border-infor input-lg" />
+                <input type="email" name="email" id="email" placeholder="example@hotmail.com" required className="max-w-sm lg:max-w-5xl lg:border lg:border-infor lg:focus:border-obscure input input-bordered focus:border-infor input-lg" />
               </div>
               <div className="form-control">
                 <label htmlFor="subjet" className="label">
