@@ -101,9 +101,9 @@ const Contactme = () => {
             <div className=" card-body">
               <div className="form-control">
                 <label htmlFor="name" className="label">
-                  <span className="label-text text-ligth franklin">What is your name?</span>
+                  <span className="label-text text-ligth franklin">What is your first name and surname?</span>
                 </label>
-                <input type="text" name="name" id="name" placeholder="Ramiro" required className="max-w-sm lg:max-w-5xl lg:border lg:border-infor lg:focus:border-obscure input input-bordered input-lg focus:border-infor" />
+                <input type="text" name="name" id="name" placeholder="Ramiro Gumma" required className="max-w-sm lg:max-w-5xl lg:border lg:border-infor lg:focus:border-obscure input input-bordered input-lg focus:border-infor" />
               </div>
               <div className="form-control">
                 <label htmlFor="email" className="label">
