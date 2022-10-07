@@ -80,13 +80,13 @@ const Navbar_responsive = () => {
                 </motion.li>
 
                 <motion.li variants={itemVariants} className="p-3 text-xs" >
-                  <Link href="/aboutme">
+                  <Link href="/Aboutme">
                     <a className="pr-60" >About Me</a>
                   </Link>
                 </motion.li>
 
                 <motion.li variants={itemVariants} className="p-3 text-xs" >
-                  <Link href="/contactme">
+                  <Link href="/Contactme">
                     <a className="pr-60" >Contact Me</a>
                   </Link>
                 </motion.li>
@@ -181,11 +181,11 @@ const Navbar_responsive = () => {
             <a className='text-xs'>Home</a>
           </Link>
           </motion.li>
-          <motion.li className="links" ><Link href="/aboutme">
+          <motion.li className="links" ><Link href="/Aboutme">
             <a className='text-xs'>About Me</a>
           </Link>
           </motion.li>
-          <motion.li className="links" ><Link href="/contactme">
+          <motion.li className="links" ><Link href="/Contactme">
             <a className='text-xs'>Contact Me</a>
           </Link>
           </motion.li>
