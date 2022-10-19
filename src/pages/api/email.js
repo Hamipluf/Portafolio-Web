@@ -14,48 +14,47 @@ export default async function email(req, res) {
             'api-key': process.env.API_KEY
         },
 
-        
+
 
         body: JSON.stringify({
             to: [
                 {
                     "email": body.mail,
                     "name": body.name,
-                    
+
 
                 },
                 {
                     "email": "ramirogumma@hotmail.com",
                     "name": "Ramiro Gumma",
-                    templateId: 7,
                 }
 
             ],
-            
+
             replyTo: { email: 'ramirogumma@hotmail.com' },
             templateId: 2,
             params: { NOMBRE: body.name, ASUNTO: body.asunto, MESSAGE: body.message },
-           
+
         }),
     };
 
 
     // CreateContact 
-    
+
 
     let apiInstance = new SibApiV3Sdk.ContactsApi();
     let createContact = new SibApiV3Sdk.CreateContact();
 
-    createContact.email = body.mail; 
+    createContact.email = body.mail;
     createContact.FIRSTNAME = body.name;
     createContact.ASUNTO = body.asunto;
     createContact.MESSAGE = body.message;
     createContact.listIds = [2]
-    
-    apiInstance.createContact(createContact).then(function(data) {
-      console.log('API called successfully. Returned data: ' + JSON.stringify(data));
-    }, function(error) {
-      console.error(error);
+
+    apiInstance.createContact(createContact).then(function (data) {
+        console.log('API called successfully. Returned data: ' + JSON.stringify(data));
+    }, function (error) {
+        console.error(error);
     });
 
     // Peticion de email transaccional
