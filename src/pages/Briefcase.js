@@ -79,7 +79,7 @@ function briefcase() {
                                 </div>
 
                                 <div className="grid grid-cols-2 gap-5 pt-10 gap-y-10 justify-items-center">
-                                    <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <div className="duration-75 active:scale-125 lg:hover:scale-125 tooltip" data-tip="CSS">
                                         <Image
                                             width={65}
                                             height={70}
@@ -87,7 +87,7 @@ function briefcase() {
                                             src={css}
                                             alt="logo diseñado por josefina ritter de css" />
                                     </div>
-                                    <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <div className="duration-75 active:scale-125 lg:hover:scale-125 tooltip" data-tip="JavaScript">
                                         <Image
                                             width={65}
                                             height={70}
@@ -95,7 +95,7 @@ function briefcase() {
                                             src={js}
                                             alt="logo diseñado por josefina ritter de javascript" />
                                     </div>
-                                    <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <div className="duration-75 active:scale-125 lg:hover:scale-125 tooltip" data-tip="HTML">
                                         <Image
                                             width={65}
                                             height={70}
@@ -140,7 +140,7 @@ function briefcase() {
 
                                 <div className="grid grid-cols-3 gap-10 p-5 pt-10 lg:pb-20 justify-items-center">
                                     <div
-                                        className="duration-75 active:scale-125 lg:hover:scale-125">
+                                        className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"  data-tip="Git Hub">
                                         <Image
                                             width={120}
                                             height={120}
@@ -149,7 +149,7 @@ function briefcase() {
                                             alt="logo diseñado por josefina ritter de github" />
                                     </div>
                                     <div
-                                        className="duration-75 active:scale-125 lg:hover:scale-125">
+                                        className="duration-75 active:scale-125 lg:hover:scale-125 tooltip" data-tip="Git">
                                         <Image
                                             width={101}
                                             height={101}
@@ -158,7 +158,7 @@ function briefcase() {
                                             alt="logo diseñado por josefina ritter de git" />
                                     </div>
                                     <div
-                                        className="duration-75 active:scale-125 lg:hover:scale-125">
+                                        className="duration-75 active:scale-125 lg:hover:scale-125 tooltip" data-tip="Tailwind">
                                         <Image
                                             width={103}
                                             height={103}
@@ -167,7 +167,7 @@ function briefcase() {
                                             alt="logo diseñado por josefina ritter de tailwind" />
                                     </div>
                                     <div
-                                        className="duration-75 mt-7 active:scale-125 lg:hover:scale-125">
+                                        className="duration-75 mt-7 active:scale-125 lg:hover:scale-125 tooltip" data-tip="NPM">
                                         <Image
                                             width={126}
                                             height={49}
@@ -175,7 +175,7 @@ function briefcase() {
                                             src={npm}
                                             alt="logo diseñado por josefina ritter de npm" />
                                     </div>
-                                    <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <div className="duration-75 active:scale-125 lg:hover:scale-125 tooltip" data-tip="React.js">
                                         <Image
                                             width={107}
                                             height={97.74}
@@ -183,7 +183,7 @@ function briefcase() {
                                             src={react}
                                             alt="logo diseñado por josefina ritter de react" />
                                     </div>
-                                    <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <div className="duration-75 active:scale-125 lg:hover:scale-125 tooltip" data-tip="Framer.Motion">
                                         <Image
                                             width={60}
                                             height={90}
@@ -191,7 +191,7 @@ function briefcase() {
                                             src={framer}
                                             alt="logo diseñado por josefina ritter de framer" />
                                     </div>
-                                    <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <div className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"  data-tip="Bootstrap">
                                         <Image
                                             width={101}
                                             height={81}
@@ -199,7 +199,7 @@ function briefcase() {
                                             src={bootstrap}
                                             alt="logo diseñado por josefina ritter de bootstrap" />
                                     </div>
-                                    <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <div className="duration-75 active:scale-125 lg:hover:scale-125 tooltip" data-tip="Vercel">
                                         <Image
                                             width={91}
                                             height={71}
@@ -207,7 +207,7 @@ function briefcase() {
                                             src={vercel}
                                             alt="logo diseñado por josefina ritter de vercel" />
                                     </div>
-                                    <div className="duration-75 active:scale-125 lg:hover:scale-125">
+                                    <div className="duration-75 active:scale-125 lg:hover:scale-125 tooltip" data-tip="Next.js">
                                         <Image
                                             width={88}
                                             height={88}

@@ -16,13 +16,26 @@ import watherapp from '../pages/img/screen.png'
 import devops from '../pages/img/DevOps News 1.png'
 import appproduct from '../pages/img/appproduct.png'
 import Image from 'next/image'
+import { motion, useScroll } from "framer-motion"
+import { useRef } from "react";
+
 
 
 
 function Carrouselbrief() {
+    const carouselRef = useRef(null)
+    const { scrollX } = useScroll({
+        container: carouselRef
+    })
     return (
-        <div className=''>
-            <div className="w-full p-4 scrollbar py-10 space-x-10 carousel carousel-center rounded-box">
+        // agregando animacion al carrousel, no terminado
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            ref={carouselRef}
+            className=''>
+            <div className="w-full p-4 scrollbarz<ag py-10 space-x-10 carousel carousel-center rounded-box">
                 {/* MODAL-1 */}
                 <div className="carousel-item">
                     <div className=''>
@@ -437,7 +450,7 @@ function Carrouselbrief() {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 export default Carrouselbrief
