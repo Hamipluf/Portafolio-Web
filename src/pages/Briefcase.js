@@ -1,26 +1,28 @@
-import css from './img/css-3.png'
-import js from './img/js.png'
-import html from './img/html5.png'
-import react from './img/react.png'
-import github from './img/github.png'
-import git from './img/git.png'
-import tailwind from './img/Tailwind.png'
-import npm from './img/npm.png'
-import framer from './img/framer.png'
-import next from './img/next.png'
-import bootstrap from './img/bootstrap.png'
-import vercel from './img/vercel.png'
-import portafolio from './img/portafolio.png'
-import watherapp from './img/screen.png'
-import devops from './img/DevOps News 1.png'
-import appproduct from './img/appproduct.png'
-import Navbar_responsive from '../component/Navbar-responsive'
-import Footer from '../component/Footer'
-import Carrouselbrief from '../component/Carousel-brief'
 import Head from 'next/head'
-import { motion } from "framer-motion"
 import Image from "next/image"
 
+import { motion } from "framer-motion"
+
+import css from '../../public/css-3.png'
+import js from '../../public/js.png'
+import html from '../../public/html5.png'
+import react from '../../public/react.png'
+import github from '../../public/github.png'
+import git from '../../public/git.png'
+import tailwind from '../../public/Tailwind.png'
+import npm from '../../public/npm.png'
+import framer from '../../public/framer.png'
+import next from '../../public/next.png'
+import bootstrap from '../../public/bootstrap.png'
+import vercel from '../../public/vercel.png'
+import portafolio from '../../public/portafolio.png'
+import watherapp from '../../public/screen.png'
+import devops from '../../public/DevOps News 1.png'
+import appproduct from '../../public/appproduct.png'
+
+import Carrouselbrief from '../component/Carousel-brief'
+import Navbar_responsive from '../component/Navbar-responsive'
+import Footer from '../component/Footer'
 
 
 function briefcase() {

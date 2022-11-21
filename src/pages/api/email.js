@@ -41,7 +41,6 @@ export default async function email(req, res) {
 
     // CreateContact 
 
-
     let apiInstance = new SibApiV3Sdk.ContactsApi();
     let createContact = new SibApiV3Sdk.CreateContact();
 

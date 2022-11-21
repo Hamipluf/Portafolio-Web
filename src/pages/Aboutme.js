@@ -1,10 +1,12 @@
-import Navbar_responsive from "../component/Navbar-responsive"
 import Head from "next/head"
 import Image from "next/image"
-import foto1 from "./img/foto-rama-1.png"
-import Footer from "../component/Footer"
+
+import foto1 from "../../public/foto-rama-1.png"
 
 import { motion } from "framer-motion"
+
+import Footer from "../component/Footer"
+import Navbar_responsive from "../component/Navbar-responsive"
 
 function aboutme() {
     return (

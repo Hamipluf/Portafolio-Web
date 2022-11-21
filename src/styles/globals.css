@@ -13,7 +13,7 @@
 }
 
 .background-home{
-    background: url(../pages/img/background-home.jpg) center center/cover;
+    background: url(../../public/background-home.jpg) center center/cover;
     background-attachment: fixed;
     
 }
