@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 
 import logo from "../../public/logo.png";
 
+import LenguageSelector from "../components/LenguageSelector";
+
 const itemVariants = {
   open: {
     opacity: 1,
@@ -28,7 +30,7 @@ const Navbar_responsive = () => {
         className="fixed z-10 w-full md:hidden "
       >
         <div className="navbar">
-          <div className="grid w-full grid-cols-2 navbar-start gap-x-16 justify-cente">
+          <div className="grid w-full grid-cols-3 navbar-start gap-x-16 justify-cente">
             <motion.div
               variants={{
                 open: { opacity: 1 },
@@ -107,6 +109,7 @@ const Navbar_responsive = () => {
                 </motion.li>
               </motion.ul>
             </motion.div>
+            <LenguageSelector />
 
             <motion.div
               initial={{
@@ -157,13 +160,12 @@ const Navbar_responsive = () => {
         >
           <Link href="/">
             <a>
-              {" "}
               <Image
                 width={30}
                 height={40}
                 src={logo}
                 alt="Logo Ramiro Gumma frontend developer"
-              />{" "}
+              />
             </a>
           </Link>
         </motion.div>
@@ -184,6 +186,8 @@ const Navbar_responsive = () => {
           }}
           className="flex flex-row justify-end gap-20"
         >
+          <LenguageSelector />
+
           <motion.li className="links">
             <Link className="text-xs" href="/">
               Home
@@ -210,3 +214,6 @@ const Navbar_responsive = () => {
   );
 };
 export default Navbar_responsive;
+
+
+

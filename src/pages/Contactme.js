@@ -1,12 +1,13 @@
-import Footer from "../component/Footer";
-import react from "react";
+import Footer from "../components/Footer";
 import { useState } from "react";
 import axios from "axios";
 import Head from "next/head";
-import Navbar_responsive from "../component/Navbar-responsive";
+import Navbar_responsive from "../components/Navbar-responsive";
 import { motion } from "framer-motion";
 
-const Contactme = () => {
+const Contactme = (props) => {
+  // console.log(props);
+  const { contactme } = props;
   const [status, setStatus] = useState("iddle");
 
   const Userdata = async (ev) => {
@@ -83,12 +84,13 @@ const Contactme = () => {
             className="text-left"
           >
             <h1 className="text-4xl font-bold lg:text-6xl">
-              <span className="text-infor"> Contact me</span> to work together!
+              <span className="text-infor"> {contactme.title}</span>{" "}
+              {contactme.title2}
             </h1>
             <p className="py-6 lg:text-xl inconsolata text-md inconsolota">
-              {'I´ll'} be glad to answer your questions.
+              {contactme.subtitle}
             </p>
-          </motion.div> 
+          </motion.div>
 
           {/* FORM */}
           <form
@@ -99,7 +101,7 @@ const Contactme = () => {
               <div className="form-control">
                 <label htmlFor="name" className="label">
                   <span className="label-text text-ligth franklin">
-                    What is your first name and surname?
+                    {contactme.label}
                   </span>
                 </label>
                 <input
@@ -114,7 +116,7 @@ const Contactme = () => {
               <div className="form-control">
                 <label htmlFor="email" className="label">
                   <span className="label-text text-ligth franklin">
-                    What is your Email?
+                    {contactme.label2}
                   </span>
                 </label>
                 <input
@@ -129,28 +131,28 @@ const Contactme = () => {
               <div className="form-control">
                 <label htmlFor="subjet" className="label">
                   <span className="label-text text-ligth franklin">
-                    Wath is your Subjet?
+                    {contactme.label3}
                   </span>
                 </label>
                 <input
                   id="asunto"
                   name="asunto"
                   type="text"
-                  placeholder="Subjet"
+                  placeholder={contactme.placeholder}
                   className="max-w-sm lg:max-w-5xl lg:border lg:border-infor lg:focus:border-obscure input input-bordered input-lg focus:border-infor"
                 />
               </div>
               <div className="form-control">
                 <label htmlFor="message" className="label">
                   <span className="label-text text-ligth franklin">
-                    Wath is your mesagge?
+                    {contactme.label4}
                   </span>
                 </label>
                 <textarea
                   name="message"
                   id="message"
                   className="max-w-sm mt-5 lg:max-w-5xl border-secondary textarea textarea-ghost focus:border-infor"
-                  placeholder="Message"
+                  placeholder={contactme.placeholder1}
                 ></textarea>
               </div>
               <div className="mt-6 form-control">
@@ -160,7 +162,7 @@ const Contactme = () => {
                   id="send"
                   className="btn bg-infor text-dark hover:bg-dark hover:text-infor"
                 >
-                  Send
+                  {contactme.button}
                 </button>
               </div>
               {/* MENSAJE ENVIADO CORRECTAMENTE */}
@@ -180,7 +182,7 @@ const Contactme = () => {
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>Thank you for contacting me!</span>
+                    <span>{contactme.alert}</span>
                   </div>
                 </div>
               )}
@@ -201,7 +203,7 @@ const Contactme = () => {
                         d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span>Error! Sending message, please try again.</span>
+                    <span>{contactme.error}</span>
                   </div>
                 </div>
               )}
@@ -215,3 +217,13 @@ const Contactme = () => {
   );
 };
 export default Contactme;
+
+export async function getStaticProps({ locale }) {
+  const response = await import(`../lang/${locale}.json`);
+  // console.log(response)
+  return {
+    props: {
+      contactme: response.default.contactme,
+    },
+  };
+}

@@ -1,0 +1,43 @@
+{
+    "index": {
+        "title": "Front-End Developer",
+        "title1": "I'm a",
+        "subtitle": "I'm ",
+        "subtitle1": "Ramiro Gumma",
+        "subtitle2": "- Based in Buenos Aires",
+        "findme": "Find",
+        "findme2": "me"
+    },
+    "aboutme": {
+        "title": "Get to",
+        "title1": "know me better",
+        "subtitle": "¡Hello! My name is Ramiro Gumma and I'm Frontend Developer.",
+        "paragraph": "I live in Buenos Aires, Argentina and I'm a freelancer. I am certified in Workana and Linkedin and my current activity is mainly focused on HTML, CSS and Javascript; I also use React, Node.js, Redux, Next,js, Firebase, Sql, WebSockets, Tailwind and Bootstrap technologies. I adapt to agile management methodologies that provide a fast and effective solution to your company's problems. I am very meticulous and seek perfection and that my client always has priority and a superior product.",
+        "paragraph2": "I have discovered my passion for this digital world, essential to advance in a super competitive market; and that is why I am in continuous training, developing my potential permanently"
+    },
+    "briefcase": {
+        "title": "Skills",
+        "title1": "Development languages I work with.",
+        "title2": "Tools",
+        "title3": "Development tools.",
+        "title4": "Check out",
+        "title5": "my proyects"
+    },
+    "contactme": {
+        "title": "Contact me",
+        "title2": " to work together!",
+        "subtitle": "I'll be glad to answer your questions.",
+        "label": "What is your first name and surname?",
+        "label2": "What is your Email?",
+        "label3": "Wath is your Subjet?",
+        "label4": "Wath is your mesagge?",
+        "placeholder": "Subjet",
+        "placeholder1": "Mesagge",
+        "button": "Send",
+        "alert": "Thank you for contacting me!",
+        "error": "Error! Sending message, please try again."
+    },
+    "navbar": {
+        "home": "Home"
+    }
+}

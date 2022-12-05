@@ -2,14 +2,14 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-import Carousel from "../component/Carousel";
-import Footer from "../component/Footer";
-import Navbar_responsive from "../component/Navbar-responsive";
+import Carousel from "../components/Carousel";
+import Footer from "../components/Footer";
+import Navbar_responsive from "../components/Navbar-responsive";
 
-export default function Index() {
+export default function Index(props) {
+  const { index } = props;
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [1, 0.2], [0, 1]);
-
   const [text, count] = useTypewriter({
     words: [
       "Welcome",
@@ -51,13 +51,12 @@ export default function Index() {
               </h2>
 
               <h2 className="pb-20 text-3xl font-bold lg:text-6xl franklin">
-                {`I'm a `}
-                <span className="text-infor">Front-End Developer</span>
+                {index.title1}
+                <span className="text-infor"> {index.title}</span>
               </h2>
 
               <h2 className="pb-72 lg:text-xl text-md inconsolota">
-                {`I'm`} <span className="text-infor">Ramiro Gumma</span> - Based
-                in Buenos Aires
+                {index.subtitle} <span className="text-infor">{index.subtitle1}</span> {index.subtitle2}
               </h2>
             </div>
           </motion.div>
@@ -69,7 +68,7 @@ export default function Index() {
             viewport={{ once: true }}
             className="pl-20 text-3xl font-black text-white franklin"
           >
-            <span className="text-infor">Find</span> me
+            <span className="text-infor">{index.findme}</span> {index.findme2}
           </motion.h2>
 
           <Carousel />
@@ -78,4 +77,13 @@ export default function Index() {
       </div>
     </>
   );
+}
+export async function getStaticProps({ locale }) {
+  const response = await import(`../lang/${locale}.json`);
+  // console.log(response)
+  return {
+    props: {
+      index: response.default.index,
+    },
+  };
 }
