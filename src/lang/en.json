@@ -6,7 +6,9 @@
         "subtitle1": "Ramiro Gumma",
         "subtitle2": "- Based in Buenos Aires",
         "findme": "Find",
-        "findme2": "me"
+        "findme2": "me",
+        "carrouselTitle": "Click on the button to contact me.",
+        "go": "Let's go!"
     },
     "aboutme": {
         "title": "Get to",
@@ -21,7 +23,16 @@
         "title2": "Tools",
         "title3": "Development tools.",
         "title4": "Check out",
-        "title5": "my proyects"
+        "title5": "my proyects",
+        "carrouselM1": "Product listing application, you can place a product with price and date of production. It is a simple CRUD made with Bootstrap and object oriented programming (OOP).",
+        "carrouselM2": "Is a simple template of a development news page, which is made with native code without CDN or libraries.",
+        "carrouselM3": "Personal website, an application that is developed mainly in Next.js, which is integrated with the sendinblue API, in it I use Framer-Motion for the animations and Tailwind for the layout.",
+        "carrouselM4": "This is a simple weather application, which is built with React.js and consumes the OpenWeather api, which is mapped with Tailwind and DaisiUi.",
+        "carrouselM5": "Netflix clone, application created with React, Redux, Firestore and Google Auth. I use a TMDB api (The Movie DataBase) which consumes lists of movies to render, the API call is made with Axios. To display the different screens I use conditionals and authentications.",
+        "carrouselM6": "It is a example of an E-Commerce, which connects to the backend with the stripe api, which allows me to receive payments with cards and more than 25 payment methods. The app is built with create-next-app, firebase-next-auth, axios, node.js, stripe, tailwind and redux",
+        "carrouselSubtitle": "Click on the button to see the app",
+        "development": "Development",
+        "go": "GO!"
     },
     "contactme": {
         "title": "Contact me",
@@ -36,8 +47,5 @@
         "button": "Send",
         "alert": "Thank you for contacting me!",
         "error": "Error! Sending message, please try again."
-    },
-    "navbar": {
-        "home": "Home"
     }
 }

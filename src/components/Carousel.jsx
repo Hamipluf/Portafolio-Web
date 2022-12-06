@@ -7,7 +7,9 @@ import workana from "../../public/workana.png";
 import githubb from "../../public/githubb.png";
 import likedinn from "../../public/linkedinn.png";
 
-function Carousel() {
+function Carousel(props) {
+  const { lenguajes } = props;
+  // console.log(lenguajes);
   return (
     <div className="background-home">
       <motion.div
@@ -35,7 +37,7 @@ function Carousel() {
               </figure>
               <div className="card-body">
                 <h2 className="text-white card-title title">ARC</h2>
-                <p>Click en el boton para contactarme.</p>
+                <p>{lenguajes.carrouselTitle}</p>
                 <div className="justify-end card-actions">
                   <motion.button
                     layout
@@ -45,7 +47,7 @@ function Carousel() {
                       target="BLANK"
                       href="https://arc.dev/@ramirogumma?preview=1"
                     >
-                      {"Let's go!"}
+                      {lenguajes.go}
                     </a>
                   </motion.button>
                 </div>
@@ -76,14 +78,14 @@ function Carousel() {
               </figure>
               <div className="card-body">
                 <h2 className="text-white card-title title">WORKANA</h2>
-                <p>Click en el boton para contactarme.</p>
+                <p>{lenguajes.carrouselTitle}</p>
                 <div className="justify-end card-actions">
                   <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor">
                     <a
                       target="BLANK"
                       href="https://www.workana.com/freelancer/b85e703950de6afa717ace9a8327c73a"
                     >
-                      {"Let's go!"}
+                      {lenguajes.go}
                     </a>
                   </button>
                 </div>
@@ -109,11 +111,11 @@ function Carousel() {
               </figure>
               <div className="card-body">
                 <h2 className="text-white card-title title">GITHUB</h2>
-                <p>Click en el boton para contactarme.</p>
+                <p>{lenguajes.carrouselTitle}</p>
                 <div className="justify-end card-actions">
                   <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor">
                     <a target="BLANK" href="https://github.com/Hamipluf">
-                      {"Let's go!"}
+                      {lenguajes.go}
                     </a>
                   </button>
                 </div>
@@ -138,14 +140,14 @@ function Carousel() {
               </figure>
               <div className="card-body">
                 <h2 className="text-white card-title title">LINKEDIN</h2>
-                <p>Click en el boton para contactarme.</p>
+                <p>{lenguajes.carrouselTitle}</p>
                 <div className="justify-end card-actions">
                   <button className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor">
                     <a
                       target="BLANK"
                       href="https://www.linkedin.com/in/ramiro-gabriel-gumma-400993240/"
                     >
-                      {"Let's go!"}
+                      {lenguajes.go}
                     </a>
                   </button>
                 </div>
@@ -167,5 +169,3 @@ function Carousel() {
 }
 
 export default Carousel;
-
-

@@ -71,7 +71,7 @@ export default function Index(props) {
             <span className="text-infor">{index.findme}</span> {index.findme2}
           </motion.h2>
 
-          <Carousel />
+          <Carousel lenguajes={index}/>
         </section>
         <Footer />
       </div>

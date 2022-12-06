@@ -23,7 +23,9 @@ import devops from "../../public/DevOps News 1.png";
 import appproduct from "../../public/appproduct.png";
 import commerce from "../../public/commerce.jpeg";
 
-function Carrouselbrief() {
+export default function Carrouselbrief(props) {
+  const { lenguajes } = props;
+  // console.log(lenguajes.carrouselM1);
   const carouselRef = useRef(null);
   const { scrollX } = useScroll({
     container: carouselRef,
@@ -36,7 +38,7 @@ function Carrouselbrief() {
       viewport={{ once: true }}
       ref={carouselRef}
     >
-      <div className="w-full p-4 py-10 space-x-10 carousel flex-row-reverse carousel-center rounded-box">
+      <div className="w-full p-4 py-10 m-5 space-x-7 carousel carousel-center rounded-box">
         {/* MODAL-1 */}
         <div className="carousel-item">
           <div className="mx-5">
@@ -65,17 +67,19 @@ function Carrouselbrief() {
                   App Product {`/>`}
                 </h3>
                 <p className="py-4">
-                  Product listing application, you can place a product with
-                  price and date of production. It is a simple CRUD made with
-                  Bootstrap and object oriented programming (OOP).
-                  <br />
-                  <span> Click on the button to see the app</span>
+                  {lenguajes.carrouselM1}
                   <br />
                   <br />
-                  Development:
+                  <span>
+                    <span className="text-xl text-infor">|</span>{" "}
+                    {lenguajes.carrouselSubtitle}
+                  </span>
+                  <br />
+                  <br />
+                  {lenguajes.development}:
                 </p>
-                <div className="divider"></div>
-                <div className="grid grid-cols-3 gap-5 pb-2 justify-items-center">
+                <hr />
+                <div className="grid grid-cols-3 gap-5 py-5 justify-items-center">
                   <div>
                     <Image
                       width={50}
@@ -126,7 +130,7 @@ function Carrouselbrief() {
                     className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"
                   >
                     <a href="https://app-product.vercel.app/" target="blank">
-                      Go!
+                      {lenguajes.go}
                     </a>
                   </label>
                 </div>
@@ -160,20 +164,20 @@ function Carrouselbrief() {
                   ✕
                 </label>
                 <h3 className="text-lg font-bold text-infor ">
-                  {" "}
                   DevOp NEWS {`/>`}
                 </h3>
                 <p className="py-4">
-                  Is a simple template of a development news page, which is made
-                  with native code without CDN or libraries.
-                  <br />
-                  <span> Click on the button to see the site</span>
+                  {lenguajes.carrouselM2}
                   <br />
                   <br />
-                  Development:
+                  <span className="text-xl text-infor">|</span>{" "}
+                  <span>{lenguajes.carrouselSubtitle}</span>
+                  <br />
+                  <br />
+                  {lenguajes.development}:
                 </p>
-                <div className="divider"></div>
-                <div className="grid grid-cols-3 gap-5 pb-2 justify-items-center">
+                <hr />
+                <div className="grid grid-cols-3 gap-5 py-5 justify-items-center">
                   <div>
                     <Image
                       width={50}
@@ -214,7 +218,7 @@ function Carrouselbrief() {
                     className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"
                   >
                     <a href="https://dev-opnews.vercel.app/" target="blank">
-                      Go!
+                      {lenguajes.go}
                     </a>
                   </label>
                 </div>
@@ -248,22 +252,20 @@ function Carrouselbrief() {
                   ✕
                 </label>
                 <h3 className="text-lg font-bold text-infor ">
-                  {" "}
                   Portafolio Web {`/>`}
                 </h3>
                 <p className="py-4">
-                  Personal website, an application that is developed mainly in
-                  Next.js, which is integrated with the sendinblue API, in it I
-                  use Framer-Motion for the animations and Tailwind for the
-                  layout.
-                  <br />
-                  <span> Click on the button to see the site</span>
+                  {lenguajes.carrouselM3}
                   <br />
                   <br />
-                  Development:
+                  <span className="text-xl text-infor">|</span>{" "}
+                  <span>{lenguajes.carrouselSubtitle}</span>
+                  <br />
+                  <br />
+                  {lenguajes.development}:
                 </p>
-                <div className="divider"></div>
-                <div className="grid grid-cols-3 pb-2 justify-items-center gap-y-5">
+                <hr />
+                <div className="grid grid-cols-3 py-5 justify-items-center gap-y-5">
                   <div>
                     <Image
                       width={50}
@@ -340,7 +342,7 @@ function Carrouselbrief() {
                     className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"
                   >
                     <a href="https://portafolio-nextjs-hamipluf.vercel.app/">
-                      GO!
+                      {lenguajes.go}
                     </a>
                   </label>
                 </div>
@@ -348,6 +350,8 @@ function Carrouselbrief() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-full p-4 py-10 mx-10 space-x-9 carousel carousel-center rounded-box">
         {/* MODAl-4 */}
         <div className="carousel-item">
           <div className="">
@@ -374,21 +378,20 @@ function Carrouselbrief() {
                   ✕
                 </label>
                 <h3 className="text-lg font-bold text-infor ">
-                  {" "}
                   Weather App {`/>`}
                 </h3>
                 <p className="py-4">
-                  {`It's`} a simple weather application, which is built with
-                  React.js and consumes the OpenWeather api, which is mapped
-                  with Tailwind and DaisiUi.
-                  <br />
-                  <span> Click on the button to see the site</span>
+                  {lenguajes.carrouselM4}
                   <br />
                   <br />
-                  Development:
+                  <span className="text-xl text-infor">|</span>{" "}
+                  <span>{lenguajes.carrouselSubtitle}</span>
+                  <br />
+                  <br />
+                  {lenguajes.development}:
                 </p>
-                <div className="divider"></div>
-                <div className="grid grid-cols-3 pb-2 justify-items-center gap-y-5">
+                <hr />
+                <div className="grid grid-cols-3 py-5 justify-items-center gap-y-5">
                   <div>
                     <Image
                       width={50}
@@ -460,7 +463,7 @@ function Carrouselbrief() {
                       href="https://weatherapp-hamipluf.vercel.app/"
                       target="BLANK"
                     >
-                      Go!
+                      {lenguajes.go}
                     </a>
                   </label>
                 </div>
@@ -494,23 +497,20 @@ function Carrouselbrief() {
                   ✕
                 </label>
                 <h3 className="text-lg font-bold text-infor ">
-                  {" "}
                   Netflix Clone {`/>`}
                 </h3>
                 <p className="py-4">
-                  Netflix clone, application created with React, Redux,
-                  Firestore and Google Auth. I use a TMDB api (The Movie Data
-                  Base) which consumes lists of movies to render, the API call
-                  is made with Axios. To display the different screens I use
-                  conditionals and authentications.
-                  <br />
-                  <span> Click on the button to see the site</span>
+                  {lenguajes.carrouselM5}
                   <br />
                   <br />
-                  Development:
+                  <span className="text-xl text-infor">|</span>{" "}
+                  <span>{lenguajes.carrouselSubtitle}</span>
+                  <br />
+                  <br />
+                  {lenguajes.development}:
                 </p>
-                <div className="divider"></div>
-                <div className="grid grid-cols-3 pb-2 justify-items-center gap-y-5">
+                <hr />
+                <div className="grid grid-cols-3 py-5 justify-items-center gap-y-5">
                   <div>
                     <Image
                       width={50}
@@ -561,7 +561,7 @@ function Carrouselbrief() {
                     className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"
                   >
                     <a href="https://netflix-clone-rg.web.app/" target="BLANK">
-                      Go!
+                      {lenguajes.go}
                     </a>
                   </label>
                 </div>
@@ -569,7 +569,7 @@ function Carrouselbrief() {
             </div>
           </div>
         </div>
-        {/* MODAl-5 */}
+        {/* MODAl-6 */}
         <div className="carousel-item">
           <div className="">
             {/* OPEN MODAL-6 */}
@@ -598,19 +598,17 @@ function Carrouselbrief() {
                   E-Commerce {`/>`}
                 </h3>
                 <p className="py-4">
-                  It is a basic example of an E-Commerce, which connects to the
-                  backend with the stripe api, which allows me to receive
-                  payments with cards and more than 25 payment methods. The app
-                  is built with create-next-app, firebase auth, axios, stripe,
-                  tailwind and react-router-dom.
-                  <br />
-                  <span> Click on the button to see the site</span>
+                  {lenguajes.carrouselM6}
                   <br />
                   <br />
-                  Development:
+                  <span className="text-xl text-infor">|</span>{" "}
+                  <span>{lenguajes.carrouselSubtitle}</span>
+                  <br />
+                  <br />
+                  {lenguajes.development}:
                 </p>
-                <div className="divider"></div>
-                <div className="grid grid-cols-3 pb-2 justify-items-center gap-y-5">
+                <hr />
+                <div className="grid grid-cols-3 py-5 justify-items-center gap-y-5">
                   <div>
                     <Image
                       width={50}
@@ -678,8 +676,11 @@ function Carrouselbrief() {
                     htmlFor="my-modal"
                     className="btn bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"
                   >
-                    <a href="https://e-commerce-rsn-hamipluf.vercel.app/" target="BLANK">
-                      Go!
+                    <a
+                      href="https://e-commerce-rsn-hamipluf.vercel.app/"
+                      target="BLANK"
+                    >
+                      {lenguajes.go}
                     </a>
                   </label>
                 </div>
@@ -691,4 +692,3 @@ function Carrouselbrief() {
     </motion.div>
   );
 }
-export default Carrouselbrief;

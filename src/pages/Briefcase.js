@@ -299,7 +299,9 @@ function Briefcase(props) {
             viewport={{ once: true }}
             className="w-full"
           >
-            <Carrouselbrief />
+            <Carrouselbrief
+            lenguajes= {briefcase}
+            />
           </motion.div>
         </section>
       </div>
@@ -314,7 +316,6 @@ export default Briefcase;
 
 export async function getStaticProps({ locale }) {
   const response = await import(`../lang/${locale}.json`);
-  // console.log(response)
   return {
     props: {
       briefcase: response.default.briefcase,
