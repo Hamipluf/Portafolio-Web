@@ -71,6 +71,30 @@ function Aboutme(props) {
               </div>
             </div>
           </div>
+          {/* MIS estudios */}
+          <div>
+            <h2 className="text-2xl font-bold text-white sm-m:text-center lg:text-4xl franklin md:ml-4 my-3">
+              {aboutme.subtitle2}
+              <span className="text-infor"> {aboutme.subtitle3}</span>
+            </h2>
+            <div className="divider"></div>
+            <div className="ml-4 my-3">
+              <h3 className="text-xl font-semibold text-white ">
+                <span className="text-infor font-bold">-</span>{" "}
+                {aboutme.subtitle4}
+              </h3>
+              <p>{aboutme.paragraph3}</p>
+            </div>
+            <div className="divider"></div>
+            <div className="ml-4 my-3">
+              <h3 className="text-xl font-semibold text-white ">
+                <span className="text-infor font-bold">-</span>{" "}
+                {aboutme.subtitle5}
+              </h3>
+              <p>{aboutme.paragraph4}</p>
+              <p>{aboutme.paragraph5}</p>
+            </div>
+          </div>
         </motion.div>
       </section>
       <Footer />

@@ -1,55 +1,63 @@
 {
-    "index": {
-        "title": "desarrollador de front-end",
-        "title1": "Soy",
-        "subtitle": "Mi nombre es ",
-        "subtitle1": "Ramiro Gumma",
-        "subtitle2": "- Buenos Aires",
-        "findme": "Encuentrame",
-        "findme2": "en",
-        "carrouselTitle": "Click en el boton para contactarme.",
-        "go": "Vamos!"
-
-    },
-    "aboutme": {
-        "title": "Conozca",
-        "title1": "más sobre mí",
-        "subtitle": "¡Hola! Mi nombre es Ramiro Gumma y soy Frontend Developer.",
-        "paragraph": "Vivo en Buenos Aires, Argentina y estudio de forma autónoma. Estoy certificado en Workana y Linkedin y  mi actividad actual se enfoca principalmente en HTML, CSS y Javascript; también utilizo las tecnologías de React, Node.js,  Redux, Next,js, Firebase, Sql, WebSockets,  Tailwind y Bootstrap. Me adapto a metodologías ágiles de gestión que brinden una rápida y eficaz solución a los problemas de tu empresa. Soy muy meticuloso y busco la perfeccion y que mi cliente siempre tenga prioridad y un producto superior.",
-        "paragraph2": "He descubierto mi pasión por este mundo digital, imprescindible para avanzar en un mercado súper competitivo; y es por eso que estoy en contínua capacitación, desarrollando mi potencial de manera permanente"
-    },
-    "briefcase": {
-        "title": "Lenguajes",
-        "title1": "Lenguajes de desarrollo con los que trabajo.",
-        "title2": "Herramientas",
-        "title3": "Herramientas de dessarrollo",
-        "title4": "Echa un vistazo a ",
-        "title5": "mis proyectos",
-        "carrouselM1": "Aplicación de listado de productos, se puede colocar un producto con precio y fecha de fabricación. Es un CRUD simple hecho con Bootstrap y programación orientada a objetos (POO).",
-        "carrouselM2": "Es una plantilla simple de una página de noticias sobre desarrollo, se hizo con código nativo sin CDN o bibliotecas.",
-        "carrouselM3": "Sitio web personal, una aplicación desarrollada principalmente en Next.js, que se integra con la API sendinblue, en ella utilizo uso Framer-Motion para las animaciones y Tailwind para la maquetación.",
-        "carrouselM4": "Se trata de una sencilla aplicación meteorológica, que está construida con React.js y consume la api OpenWeather, que se maqueto con Tailwind y DaisiUi.",
-        "carrouselM5": "Clon de Netflix, aplicación creada con React, Redux, Firestore y Google Auth. Utilizo una api de TMDB (The Movie Data Base) que consume listas de películas para renderizar, la llamada a la API se realiza con Axios. Para mostrar las diferentes pantallas utilizo condicionales y autenticaciones.",
-        "carrouselM6": "Es un ejemplo de un E-Commerce, que se conecta al backend con la api de stripe, lo que me permite recibir pagos con tarjetas y más de 25 métodos de pago. La app está construida con create-next-app, firebase-next-auth, axios, node.js, stripe, tailwind y redux.",
-        "carrouselSubtitle": "Haga clic en el botón para probar el demo de la aplicación",
-        "development": "Herramientas de Desarrollo",
-        "go": "Vamos!"
-    },
-    "contactme": {
-        "title": "¡Contacte conmigo ",
-        "title2": " para trabajar juntos!",
-        "subtitle": "Estaré encantado de responder a sus preguntas.",
-        "label": "¿Cuál es su nombre y apellido?",
-        "label2": "Cual es tu Email?",
-        "label3": "Cual es tu asunto?",
-        "label4": "Cual es tu mensaje?",
-        "placeholder": "Asunto",
-        "placeholder1": "Message",
-        "button": "Enviar",
-        "alert": "¡Gracias por ponerse en contacto conmigo!",
-        "error": "Error! Al enviar el mensaje. Porfavor intente nuevamente"
-    },
-    "navbar": {
-        "home": "Inicio"
-    }
+  "index": {
+    "title": "desarrollador full-stack",
+    "title1": "Soy",
+    "subtitle": "Mi nombre es ",
+    "subtitle1": "Ramiro Gumma",
+    "subtitle2": "- Buenos Aires",
+    "findme": "Encuentrame",
+    "findme2": "en",
+    "carrouselTitle": "Click en el boton para contactarme.",
+    "go": "Vamos!"
+  },
+  "aboutme": {
+    "title": "Conozca",
+    "title1": "más sobre mí",
+    "subtitle": "¡Hola! Mi nombre es Ramiro Gumma y soy Frontend Developer.",
+    "subtitle2": "Mis",
+    "subtitle3": "Estudios",
+    "subtitle4": "Coderhouse",
+    "subtitle5": "Codo a codo 4.0",
+    "paragraph": "Vivo en Buenos Aires, Argentina y estudio de forma autónoma. Estoy certificado en Workana y Linkedin y  mi actividad actual se enfoca principalmente en HTML, CSS y Javascript; también utilizo las tecnologías de React, Node.js,  Redux, Next,js, Firebase, Sql, WebSockets,  Tailwind y Bootstrap. Me adapto a metodologías ágiles de gestión que brinden una rápida y eficaz solución a los problemas de tu empresa. Soy muy meticuloso y busco la perfeccion y que mi cliente siempre tenga prioridad y un producto superior.",
+    "paragraph2": "He descubierto mi pasión por este mundo digital, imprescindible para avanzar en un mercado súper competitivo; y es por eso que estoy en contínua capacitación, desarrollando mi potencial de manera permanente",
+    "paragraph3": "Desarrollo Backend",
+    "paragraph4": "Full Stack - desarrollo web (JavaScript/Node.JS)",
+    "paragraph5": "Certificacion por la Ciudad de Buenos Aires, Argentina"
+  },
+  "briefcase": {
+    "title": "Lenguajes",
+    "title1": "Lenguajes de desarrollo con los que trabajo.",
+    "title2": "Herramientas",
+    "title3": "Herramientas de dessarrollo",
+    "title4": "Echa un vistazo a ",
+    "title5": "mis proyectos",
+    "title6": "mis proyectos pagos",
+    "carrouselM1": "Aplicación de listado de productos, se puede colocar un producto con precio y fecha de fabricación. Es un CRUD simple hecho con Bootstrap y programación orientada a objetos (POO).",
+    "carrouselM2": "Es una plantilla simple de una página de noticias sobre desarrollo, se hizo con código nativo sin CDN o bibliotecas.",
+    "carrouselM3": "Sitio web personal, una aplicación desarrollada principalmente en Next.js, que se integra con la API sendinblue, en ella utilizo uso Framer-Motion para las animaciones y Tailwind para la maquetación.",
+    "carrouselM4": "Se trata de una sencilla aplicación meteorológica, que está construida con React.js y consume la api OpenWeather, que se maqueto con Tailwind y DaisiUi.",
+    "carrouselM5": "Clon de Netflix, aplicación creada con React, Redux, Firestore y Google Auth. Utilizo una api de TMDB (The Movie Data Base) que consume listas de películas para renderizar, la llamada a la API se realiza con Axios. Para mostrar las diferentes pantallas utilizo condicionales y autenticaciones.",
+    "carrouselM6": "Es un ejemplo de un E-Commerce, que se conecta al backend con la api de stripe, lo que me permite recibir pagos con tarjetas y más de 25 métodos de pago. La app está construida con create-next-app, firebase-next-auth, axios, node.js, stripe, tailwind y redux.",
+    "carrouselM7": "Creación de Api y webSocket para reacciones en tiempo real y contador de visitas a la pagina dependiendo del país.",
+    "carrouselSubtitle": "Haga clic en el botón para probar el demo de la aplicación",
+    "development": "Herramientas de Desarrollo",
+    "go": "Vamos!"
+  },
+  "contactme": {
+    "title": "¡Contacte conmigo ",
+    "title2": " para trabajar juntos!",
+    "subtitle": "Estaré encantado de responder a sus preguntas.",
+    "label": "¿Cuál es su nombre y apellido?",
+    "label2": "Cual es tu Email?",
+    "label3": "Cual es tu asunto?",
+    "label4": "Cual es tu mensaje?",
+    "placeholder": "Asunto",
+    "placeholder1": "Message",
+    "button": "Enviar",
+    "alert": "¡Gracias por ponerse en contacto conmigo!",
+    "error": "Error! Al enviar el mensaje. Porfavor intente nuevamente"
+  },
+  "navbar": {
+    "home": "Inicio"
+  }
 }

@@ -19,13 +19,20 @@ import portafolio from "../../public/portafolio.png";
 import watherapp from "../../public/screen.png";
 import devops from "../../public/DevOps News 1.png";
 import appproduct from "../../public/appproduct.png";
+import express from "../../public/express.png";
+import AWS from "../../public/AWS.png";
+import MongoDb from "../../public/MongoDb.png";
+import sendinBlue from "../../public/sendinBlue.png";
+import nodeJs from "../../public/node.png";
+import Sql from "../../public/SQL.png";
+import firebase from "../../public/Firebase.png";
 
 import Carrouselbrief from "../components/Carousel-brief";
+import CarrouselbriefPaid from "../components/Carousel-brief-paid";
 import Navbar_responsive from "../components/Navbar-responsive";
 import Footer from "../components/Footer";
 
 function Briefcase(props) {
-  // console.log(props)
   const { briefcase } = props;
 
   return (
@@ -271,6 +278,90 @@ function Briefcase(props) {
                       alt="logo diseñado por josefina ritter de next"
                     />
                   </div>
+                  <div
+                    className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"
+                    data-tip="Amazon Web Services"
+                  >
+                    <Image
+                      width={88}
+                      height={88}
+                      priority
+                      src={AWS}
+                      alt="logo diseñado por josefina ritter de amazon web services"
+                    />
+                  </div>
+                  <div
+                    className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"
+                    data-tip="Mongo DB"
+                  >
+                    <Image
+                      width={88}
+                      height={88}
+                      priority
+                      src={MongoDb}
+                      alt="logo diseñado por josefina ritter de DB Mongo"
+                    />
+                  </div>
+                  <div
+                    className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"
+                    data-tip="Express"
+                  >
+                    <Image
+                      width={88}
+                      height={88}
+                      priority
+                      src={express}
+                      alt="logo diseñado por josefina ritter de express"
+                    />
+                  </div>
+                  <div
+                    className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"
+                    data-tip="Sendin Blue"
+                  >
+                    <Image
+                      width={88}
+                      height={88}
+                      priority
+                      src={sendinBlue}
+                      alt="logo diseñado por josefina ritter de sendinblue"
+                    />
+                  </div>
+                  <div
+                    className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"
+                    data-tip="Firebase"
+                  >
+                    <Image
+                      width={88}
+                      height={88}
+                      priority
+                      src={firebase}
+                      alt="logo diseñado por josefina ritter de firebase"
+                    />
+                  </div>
+                  <div
+                    className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"
+                    data-tip="Node.js"
+                  >
+                    <Image
+                      width={88}
+                      height={88}
+                      priority
+                      src={nodeJs}
+                      alt="logo diseñado por josefina ritter de Nodejs"
+                    />
+                  </div>
+                  <div
+                    className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"
+                    data-tip="SQL"
+                  >
+                    <Image
+                      width={88}
+                      height={88}
+                      priority
+                      src={Sql}
+                      alt="logo diseñado por josefina ritter de SQL"
+                    />
+                  </div>
                 </div>
               </motion.div>
             </section>
@@ -281,7 +372,7 @@ function Briefcase(props) {
           <div className="font-black">
             <h2 className="text-3xl text-white lg:pl-16 sm-m:text-center lg:text-5xl franklin">
               {briefcase.title4}
-              <span className="text-infor">{briefcase.title5}</span>
+              <span className="text-infor"> {briefcase.title5}</span>
             </h2>
             <p className="px-10 py-2 text-4xl font-extrabold">❯</p>
           </div>
@@ -299,11 +390,35 @@ function Briefcase(props) {
             viewport={{ once: true }}
             className="w-full"
           >
-            <Carrouselbrief
-            lenguajes= {briefcase}
-            />
+            <Carrouselbrief lenguajes={briefcase} />
           </motion.div>
         </section>
+        {/* PROYECTOS Pagos */}
+        {/* <section className="ont-black franklin">
+          <div className="font-black">
+            <h2 className="text-3xl text-white lg:pl-16 sm-m:text-center lg:text-5xl franklin">
+              {briefcase.title4}
+              <span className="text-infor"> {briefcase.title6}</span>
+            </h2>
+            <p className="px-10 py-2 text-4xl font-extrabold">❯</p>
+          </div>
+
+          <motion.div
+            initial={{
+              x: -100,
+              opacity: 0,
+            }}
+            transition={{ duration: 1.2 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            viewport={{ once: true }}
+            className="w-full"
+          >
+            <CarrouselbriefPaid lenguajes={briefcase} />
+          </motion.div>
+        </section> */}
       </div>
       {/* FOOTER */}
 
