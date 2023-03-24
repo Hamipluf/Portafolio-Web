@@ -16,8 +16,8 @@ import framer from "../../public/framer.png";
 import next from "../../public/next.png";
 import bootstrap from "../../public/bootstrap.png";
 import vercel from "../../public/vercel.png";
-import portafolio from "../../public/portafolio.png";
 import node from "../../public/node.png";
+import socketIo from "../../public/socketIo.png";
 import ApiFree from "../../public/Captura.JPG";
 
 export default function Carrouselbrief(props) {
@@ -39,7 +39,7 @@ export default function Carrouselbrief(props) {
         {/* MODAL-1 */}
         <div className="carousel-item">
           <div className="mx-5">
-            <label htmlFor="my-modal" className="cursor-pointer modal-button">
+            <label htmlFor="my-modal7" className="cursor-pointer modal-button">
               <div className="hover:shadow-xl rounded-box hover:shadow-infor hover:translate-x-6 hover:transition-all hover:origin-top-left hover:translate-y-6 ">
                 <Image
                   width={370}
@@ -51,11 +51,11 @@ export default function Carrouselbrief(props) {
               </div>
             </label>
             {/* BODY MODAL */}
-            <input type="checkbox" id="my-modal" className="modal-toggle" />
+            <input type="checkbox" id="my-modal7" className="modal-toggle" />
             <div className="text-white modal">
               <div className=" modal-box bg-gradient-to-b from-dark to-obscure">
                 <label
-                  htmlFor="my-modal"
+                  htmlFor="my-modal7"
                   className="absolute btn btn-sm btn-circle right-2 top-2 bg-infor text-dark hover:scale-125 hover:bg-dark hover:text-infor"
                 >
                   ✕
@@ -64,8 +64,7 @@ export default function Carrouselbrief(props) {
                   Api FreeWaves {`/>`}
                 </h3>
                 <p className="py-4">
-                  Creation of Api and webSocket for real time feedback and page
-                  views counter depending on the country.
+                  {lenguajes.carrouselM7}
                   <br />
                   <br />
                   <span>
@@ -94,6 +93,15 @@ export default function Carrouselbrief(props) {
                       height={50}
                       priority
                       src={js}
+                      alt="logo diseñado por josefina ritter de javascript"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      width={50}
+                      height={50}
+                      priority
+                      src={socketIo}
                       alt="logo diseñado por josefina ritter de javascript"
                     />
                   </div>

@@ -26,6 +26,8 @@ import sendinBlue from "../../public/sendinBlue.png";
 import nodeJs from "../../public/node.png";
 import Sql from "../../public/SQL.png";
 import firebase from "../../public/Firebase.png";
+import socketIo from "../../public/socketIo.png";
+import stripe from "../../public/stripe.png";
 
 import Carrouselbrief from "../components/Carousel-brief";
 import CarrouselbriefPaid from "../components/Carousel-brief-paid";
@@ -362,6 +364,30 @@ function Briefcase(props) {
                       alt="logo diseñado por josefina ritter de SQL"
                     />
                   </div>
+                  <div
+                    className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"
+                    data-tip="Stripe"
+                  >
+                    <Image
+                      width={88}
+                      height={88}
+                      priority
+                      src={stripe}
+                      alt="logo diseñado por josefina ritter de stripe"
+                    />
+                  </div>
+                  <div
+                    className="duration-75 active:scale-125 lg:hover:scale-125 tooltip"
+                    data-tip="Socket.io"
+                  >
+                    <Image
+                      width={88}
+                      height={88}
+                      priority
+                      src={socketIo}
+                      alt="logo diseñado por josefina ritter de Soquet Io"
+                    />
+                  </div>
                 </div>
               </motion.div>
             </section>
@@ -394,7 +420,7 @@ function Briefcase(props) {
           </motion.div>
         </section>
         {/* PROYECTOS Pagos */}
-        {/* <section className="ont-black franklin">
+        <section className="ont-black franklin">
           <div className="font-black">
             <h2 className="text-3xl text-white lg:pl-16 sm-m:text-center lg:text-5xl franklin">
               {briefcase.title4}
@@ -418,7 +444,7 @@ function Briefcase(props) {
           >
             <CarrouselbriefPaid lenguajes={briefcase} />
           </motion.div>
-        </section> */}
+        </section>
       </div>
       {/* FOOTER */}
 
