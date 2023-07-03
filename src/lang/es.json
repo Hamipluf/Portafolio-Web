@@ -39,6 +39,7 @@
     "carrouselM5": "Clon de Netflix, aplicación creada con React, Redux, Firestore y Google Auth. Utilizo una api de TMDB (The Movie Data Base) que consume listas de películas para renderizar, la llamada a la API se realiza con Axios. Para mostrar las diferentes pantallas utilizo condicionales y autenticaciones.",
     "carrouselM6": "Es un ejemplo de un E-Commerce, que se conecta al backend con la api de stripe, lo que me permite recibir pagos con tarjetas y más de 25 métodos de pago. La app está construida con create-next-app, firebase-next-auth, axios, node.js, stripe, tailwind y redux.",
     "carrouselM7": "Creación de Api y webSocket para reacciones en tiempo real y contador de visitas a la pagina dependiendo del país.",
+    "carrouselM8": "Proyecto final de curso de programación backend. Es un E-Commerce funcional, el cual está hecho sobre Node.js y el servidor lo corre Express.js. Se usó un motor de plantilla Handlebars. Se trabaja con autenticación con JWT. La base de datos es MongoDB. Además, se usa NodeMailer para notificaciones vía correo electrónico. En la dirección /apidocs está la documentación de los endpoints. Además, se trabaja con Stripe para la pasarela de pago.",
     "carrouselSubtitle": "Haga clic en el botón para probar el demo de la aplicación",
     "development": "Herramientas de Desarrollo",
     "go": "Vamos!"

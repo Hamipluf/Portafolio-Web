@@ -39,6 +39,7 @@
     "carrouselM5": "Netflix clone, application created with React, Redux, Firestore and Google Auth. I use a TMDB api (The Movie DataBase) which consumes lists of movies to render, the API call is made with Axios. To display the different screens I use conditionals and authentications.",
     "carrouselM6": "It is a example of an E-Commerce, which connects to the backend with the stripe api, which allows me to receive payments with cards and more than 25 payment methods. The app is built with create-next-app, firebase-next-auth, axios, node.js, stripe, tailwind and redux",
     "carrouselM7": "Creation of Api and webSocket for real time feedback and page views counter depending on the country.",
+    "carrouselM8": "Final project for the backend programming course. It is a functional E-Commerce built on Node.js, with the server running on Express.js. We utilized the Handlebars template engine and implemented JWT authentication. The database used is MongoDB. Additionally, NodeMailer was employed for email notifications, and the API documentation can be found at the /apidocs endpoint. Furthermore, Stripe was integrated as the payment gateway.",
     "carrouselSubtitle": "Click on the button to see the app",
     "development": "Development",
     "go": "GO!"
